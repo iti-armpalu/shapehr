@@ -1,0 +1,75 @@
+.siteFooter {
+  position: relative;
+  display: block;
+}
+
+.siteFooterBottom {
+  position: relative;
+  display: block;
+  text-align: center;
+  border-top: 1px solid rgba(var(--shapehr-gray-rgb), 0.1);
+  padding: 32px 0;
+  margin-top: 69px;
+}
+
+.siteFooterBottomText {
+  font-size: 16px;
+  color: #9baebd;
+  font-weight: 500;
+  line-height: 30px;
+  margin: 0;
+}
+
+/* scroll to top */
+.scrollToTop {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background: var(--shapehr-base);
+  position: fixed;
+  bottom: 28px;
+  right: 40px;
+  z-index: 99;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.scrollToTopNoShow {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background: var(--shapehr-base);
+  position: fixed;
+  bottom: 28px;
+  right: 40px;
+  z-index: 99;
+  text-align: center;
+  border-radius: 50%;
+  animation: slideaway 2s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideaway {
+  from { 
+    opacity: 1;
+  }
+  to { 
+    opacity: 0;
+  }
+}
+
+.scrollToTop span,
+.scrollToTopNoShow span {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 45px;
+}
+
+.scrollToTop:hover {
+  background-color: var(--shapehr-black);
+}
+
+.scrollToTop:hover span,
+.scrollToTopNoShow span {
+  color: #fff;
+}

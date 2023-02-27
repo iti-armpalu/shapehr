@@ -1,0 +1,20 @@
+.mainHeader {
+  background: transparent;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 999;
+  transition: all 500ms ease;
+}
+
+.mainHeader:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  content: "";
+  background-color: rgba(var(--shapehr-white-rgb), 0.1);
+  z-index: -1;
+}

@@ -1,0 +1,37 @@
+.section {
+  position: relative;
+  display: block;
+  padding: 0 0 40px;
+  margin-top: -80px
+  /* border-top: 1px solid #c9d5db; */
+}
+
+.imgWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+}
+
+.imgBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-right: 100px;
+}
+
+.imgBox img {
+  opacity: 0.2;
+  max-width: 100%;
+}
+
+.imgBox img:hover {
+  opacity: 0.6;
+}
