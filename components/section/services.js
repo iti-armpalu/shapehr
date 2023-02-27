@@ -58,7 +58,7 @@ function Services() {
             <div className={styles.featureSingle}>
               <div className={styles.featureImgBox}>
                 <div className={styles.featureImg}>
-                  <img src="images/resources/feature-one-img-2.jpg" alt="" />
+                  <img src="images/resources/feature-one-img-1.jpg" alt="" />
                 </div>
                 <div className={styles.featureIconBox}>
                   <div className="feature-one__icon-title-box">
@@ -100,7 +100,7 @@ function Services() {
             <div className={styles.featureSingle}>
               <div className={styles.featureImgBox}>
                 <div className={styles.featureImg}>
-                  <img src="images/resources/feature-one-img-3.jpg" alt="" />
+                  <img src="images/resources/feature-one-img-1.jpg" alt="" />
                 </div>
                 <div className={styles.featureIconBox}>
                   <div className="feature-one__icon-title-box">
