@@ -1,3 +1,4 @@
+/* Structure */
 .menu {
   position: relative;
   padding: 0 80px;
@@ -9,6 +10,7 @@
   display: block;
 }
 
+/* Logo - left */
 .wrapperLeft {
   position: relative;
   display: block;
@@ -37,6 +39,7 @@
   width: 1px;
 }
 
+/* Navigation menu */
 .wrapperMainMenu {
   position: relative;
   display: block;
@@ -54,6 +57,11 @@
   display: none;
 }
 
+.menu .list a {
+  cursor: pointer;
+}
+
+/* CTA - right */
 .wrapperRight {
   position: relative;
   display: flex;
@@ -62,26 +70,13 @@
   align-items: center;
 }
 
-.wrapperCall {
+.wrapperContact {
   position: relative;
   display: flex;
   align-items: center;
 }
 
-.wrapperCallIcon {
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: 58px;
-  width: 58px;
-  background-color: var(--shapehr-base);
-  border-radius: 50%;
-  justify-content: center;
-  -webkit-transition: all 500ms ease;
-  transition: all 500ms ease;
-}
-
-.wrapperCallIcon:before {
+.wrapperContact:before {
   position: absolute;
   top: 4px;
   bottom: 5px;
@@ -91,46 +86,48 @@
   width: 1px;
 }
 
-.wrapperCallIcon:hover {
-  background-color: var(--shapehr-white);
-}
-
-.wrapperCallIcon span {
-  font-size: 30px;
+/* CTA - button */
+.btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  /* -webkit-appearance: none; */
+  outline: none !important;
+  background-color: var(--shapehr-base);
   color: var(--shapehr-white);
-  -webkit-transition: all 500ms ease;
-  transition: all 500ms ease;
-}
-
-.wrapperCallIcon:hover span {
-  color: var(--shapehr-base);
-}
-
-.wrapperCallNumber {
-  margin-left: 20px;
-}
-
-.wrapperCallNumber h5 {
-  font-size: 18px;
-  line-height: 25px;
-  font-weight: 700;
-}
-
-.wrapperCallNumber h5 a {
-  color: var(--shapehr-white);
-  -webkit-transition: all 500ms ease;
-  transition: all 500ms ease;
-}
-
-.wrapperCallNumber a:hover {
-  color: var(--shapehr-base);
-}
-
-.wrapperCallNumber p {
   font-size: 14px;
-  margin: 0;
-  line-height: 26px;
-  color: #9aadbd;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 15px 60px 15px;
+  transition: all 0.3s linear;
+  overflow: hidden;
+  letter-spacing: 0.1em;
+  z-index: 1;
+  cursor: pointer;
+  animation: btn 2s ease;
+}
+
+.btn:hover {
+  color: var(--shapehr-white);
+}
+
+.btn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: -2px;
+  bottom: 0;
+  background-color: var(--shapehr-black);
+  transition: transform 500ms ease;
+  transform: scale(0, 1);
+  transform-origin: left center;
+  z-index: -1;
+}
+
+.btn:hover:after {
+  transform: scale(1, 1);
+  transform-origin: right center;
 }
 
 

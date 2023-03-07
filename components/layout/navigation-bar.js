@@ -1,11 +1,6 @@
 import { Link } from "react-scroll";
 
-import MainHeaderTop from "./main-header-top";
-
 import styles from "./navigation-bar.module.css";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 function NavigationBar() {
   return (
@@ -55,32 +50,20 @@ function NavigationBar() {
                   Meet the Expert
                 </Link>
               </li>
-              <li>
-                <Link
-                  to="contact-section"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                >
-                  Contact
-                </Link>
-              </li>
             </ul>
           </div>
         </div>
         <div className={styles.wrapperRight}>
-          <div className={styles.wrapperCall}>
-            <div className={styles.wrapperCallIcon}>
-              <span className={styles.iconPhone}>
-                <FontAwesomeIcon icon={faPhone} />
-              </span>
-            </div>
-            <div className={styles.wrapperCallNumber}>
-              <p>Call Anytime</p>
-              <h5>
-                <a href="tel:1307776-0608">+ 44 7777 6666</a>
-              </h5>
-            </div>
+          <div className={styles.wrapperContact}>
+            <Link
+              to="contact-section"
+              className={styles.btn}
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              contact us
+            </Link>
           </div>
         </div>
       </div>

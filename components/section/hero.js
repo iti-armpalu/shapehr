@@ -43,21 +43,19 @@ function Hero() {
 
               <div className={`${styles.container} container`}>
                 <div className="row">
-                  <div className="col-xl-9">
+                  <div className="col-xl-10">
                     <div className={styles.mainContent}>
                       <h2>
-                        Experts in Project
-                        <br />and Consultancy
-                        <br />Services
+                        A consultancy born out of the belief that companies most effectively change, transform and deliver their ambitions and results when their People and their HR/People function are organised, prepared and aligned to the journey ahead
                       </h2>
                       <p>
-                        together with leadership coaching and mentoring to teams and individuals.
+                        HR/People functions accelerate organisational success
                       </p>
                       {/* <Link
                         to="/contact">
                         free consultation
                       </Link> */}
-                      <a href="about.html" className={styles.thmBtn}>
+                      <a className={styles.thmBtn}>
                         free consultation
                       </a>
                     </div>
