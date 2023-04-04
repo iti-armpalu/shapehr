@@ -1,12 +1,12 @@
 import styles from "./expert.module.css";
 
 import image from "../../public/images/shapes/counter-one-shape.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMinus } from "@fortawesome/free-solid-svg-icons";
 
 function Expert() {
   return (
-    <section 
-      id="expert-section"
-      className={styles.section}>
+    <section id="expert-section" className={styles.section}>
       <div className={styles.sectionWrap}>
         {/* <div
           className="counter-one-shape"
@@ -20,27 +20,106 @@ function Expert() {
           }}
         />
 
-
         <div className="container">
           <div className={styles.sectionTitle}>
-            <span className={styles.tagline}>Professional Consultant</span>
-            <h2 className={styles.title}>Meet Simon Heath</h2>
+            <span className={styles.tagline}>Our People</span>
+            <h2 className={styles.title}>Simon Heath</h2>
+            {/* <p>
+              Simon is particularly passionate about helping businesses imagine,
+              articulate and shape their aspirational future - from
+              understanding the current “as is” positions and impact, to
+              detailing the journeys and milestones required to deliver
+              successful transformations.
+            </p> */}
           </div>
           <div className={styles.bottom}>
-          <div className={styles.sectionImg}>
-          <img src="images/team/team-one-img-1.jpg" alt="" />
-        </div>
+            <p>
+              Simon is particularly passionate about helping businesses imagine,
+              <br/>articulate and shape their aspirational future - from
+              understanding <br/>the current “as is” positions and impact, to
+              detailing the journeys <br/>and milestones required to deliver
+              successful transformations.
+            </p>
+            <div className={styles.sectionImg}>
+              <img src="images/team/SPH.jpg" alt="" />
+            </div>
             <div className={styles.box}>
-              <p>
-                The majority have suffered alteration in some form, by injected
-                humour, or randomised words which don't look even slightly
-                believable.
-              </p>
-              <p>
-                The majority have suffered alteration in some form, by injected
-                humour, or randomised words which don't look even slightly
-                believable.
-              </p>
+              <ul>
+                <li>
+                  <div className={styles.icon}>
+                    <FontAwesomeIcon icon={faMinus} />
+                  </div>
+                  <div className={styles.text}>
+                    <p>
+                      WPP - Global HR Transformation Lead & HCM Product Owner
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div className={styles.icon}>
+                    <FontAwesomeIcon icon={faMinus} />
+                  </div>
+                  <div className={styles.text}>
+                    <p>Geometry - Global Chief People Officer</p>
+                  </div>
+                </li>
+                <li>
+                  <div className={styles.icon}>
+                    <FontAwesomeIcon icon={faMinus} />
+                  </div>
+                  <div className={styles.text}>
+                    <p>DMG Media - HR Director</p>
+                  </div>
+                </li>
+                <li>
+                  <div className={styles.icon}>
+                    <FontAwesomeIcon icon={faMinus} />
+                  </div>
+                  <div className={styles.text}>
+                    <p>Saatchi & Saatchi - EMEA HR Director</p>
+                  </div>
+                </li>
+                <li>
+                  <div className={styles.icon}>
+                    <FontAwesomeIcon icon={faMinus} />
+                  </div>
+                  <div className={styles.text}>
+                    <p>Misys Plc - Global HR Director - Banking</p>
+                  </div>
+                </li>
+                <li>
+                  <div className={styles.icon}>
+                    <FontAwesomeIcon icon={faMinus} />
+                  </div>
+                  <div className={styles.text}>
+                    <p>Eidos Plc - Group HR Director</p>
+                  </div>
+                </li>
+                <li>
+                  <div className={styles.icon}>
+                    <FontAwesomeIcon icon={faMinus} />
+                  </div>
+                  <div className={styles.text}>
+                    <p>Virgin Cinemas - HR Manager</p>
+                  </div>
+                </li>
+                <li>
+                  <div className={styles.icon}>
+                    <FontAwesomeIcon icon={faMinus} />
+                  </div>
+                  <div className={styles.text}>
+                    <p>Blockbuster Video - HR Officer</p>
+                  </div>
+                </li>
+                <li>
+                  <div className={styles.icon}>
+                    <FontAwesomeIcon icon={faMinus} />
+                  </div>
+                  <div className={styles.text}>
+                    <p>Conder Plc - HR Graduate / Personnel Officer</p>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

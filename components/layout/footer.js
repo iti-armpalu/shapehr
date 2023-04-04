@@ -1,14 +1,10 @@
 import styles from "./footer.module.css";
 import { useEffect, useState } from "react";
 
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
 
-
-
 function Footer() {
-
   const [scrollY, setScrollY] = useState(0);
 
   const isBrowser = () => typeof window !== "undefined"; //The approach recommended by Next.js
@@ -38,31 +34,21 @@ function Footer() {
     <footer className={styles.siteFooter}>
       <div className="container">
         <div className={styles.siteFooterBottom}>
-          <p className={styles.siteFooterBottomText}>
-            © 2023 Copyrights by ShapeHR.com
-          </p>
+          <p className={styles.siteFooterBottomText}>© 2023 Shape HR Ltd.</p>
         </div>
-
-
-        {scrollY > 400
-            ? 
-            <div 
-              className={styles.scrollToTop}
-              onClick={scrollToTop}>
-                <span>
-                  <FontAwesomeIcon icon={faAngleUp} />
-                </span>
-            </div>
-            :
-            <div 
-              className={styles.scrollToTopNoShow}
-              onClick={scrollToTop}>
-                <span>
-                  <FontAwesomeIcon icon={faAngleUp} />
-                </span>
-            </div>
-        }
-
+        {scrollY > 400 ? (
+          <div className={styles.scrollToTop} onClick={scrollToTop}>
+            <span>
+              <FontAwesomeIcon icon={faAngleUp} />
+            </span>
+          </div>
+        ) : (
+          <div className={styles.scrollToTopNoShow} onClick={scrollToTop}>
+            <span>
+              <FontAwesomeIcon icon={faAngleUp} />
+            </span>
+          </div>
+        )}
       </div>
     </footer>
   );

@@ -1,0 +1,205 @@
+.main {
+  overflow: hidden;
+  position: relative;
+}
+
+.overlay {
+  position: relative;
+  background-color: #002442;
+}
+
+.main .container {
+  position: relative !important;
+  padding-top: 300px !important;
+  padding-bottom: 190px !important;
+  z-index: 30 !important;
+}
+
+.imageLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  background-color: #002442;
+  background-blend-mode: luminosity;
+  z-index: 1;
+  animation: imageLayer 7s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes imageLayer {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.shapeOne {
+  position: absolute;
+  top: 215px;
+  left: 345px;
+  z-index: 3;
+}
+
+.shapeOne img {
+  animation: shapeOne 2s ease;
+}
+
+@keyframes shapeOne {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) translateX(0%);
+  }
+}
+
+.shapeTwo {
+  position: absolute;
+  bottom: 270px;
+  right: 170px;
+  z-index: 4;
+}
+
+.shapeTwo img {
+  animation: shapeTwo 2s ease;
+}
+
+@keyframes shapeTwo {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+  }
+}
+
+.shapeThree {
+  position: absolute;
+  bottom: -75px;
+  right: 85px;
+  z-index: 3;
+}
+
+.shapeThree img {
+  animation: shapeThree 1s ease;
+}
+
+@keyframes shapeThree {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+  }
+}
+
+.mainContent {
+  position: relative;
+  display: block;
+}
+
+.main h2 {
+  margin: 0;
+  margin-bottom: 24px;
+  color: var(--shapehr-white);
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100px;
+  letter-spacing: -0.04em;
+  animation: h2 2s ease-in-out;
+}
+
+@keyframes h2 {
+  from {
+    opacity: 0;
+    transform: translateY(120px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.main p {
+  font-size: 22px;
+  color: var(--shapehr-white);
+  margin: 0;
+  line-height: 40px;
+  margin-bottom: 37px;
+  animation: p 2s ease;
+}
+
+@keyframes p {
+  from {
+    opacity: 0;
+    transform: translateY(-120px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.thmBtn {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  /* -webkit-appearance: none; */
+  outline: none !important;
+  background-color: var(--shapehr-base);
+  color: var(--shapehr-white);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 15px 60px 15px;
+  transition: all 0.3s linear;
+  overflow: hidden;
+  letter-spacing: 0.1em;
+  z-index: 1;
+  animation: btn 2s ease;
+}
+
+@keyframes btn {
+  from {
+    opacity: 0;
+    transform: translateY(120px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.thmBtn:hover {
+  color: var(--shapehr-white);
+}
+
+.thmBtn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: -2px;
+  bottom: 0;
+  background-color: var(--shapehr-black);
+  transition: transform 500ms ease;
+  transform: scale(0, 1);
+  transform-origin: left center;
+  z-index: -1;
+}
+
+.thmBtn:hover:after {
+  transform: scale(1, 1);
+  transform-origin: right center;
+}

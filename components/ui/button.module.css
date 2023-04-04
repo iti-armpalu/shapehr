@@ -1,0 +1,44 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  /* vertical-align: middle; */
+  /* -webkit-appearance: none; */
+  outline: none !important;
+  border: none;
+  background-color: var(--shapehr-base);
+  color: var(--shapehr-white);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 15px 60px 15px;
+  transition: all 0.3s linear;
+  overflow: hidden;
+  letter-spacing: 0.1em;
+  z-index: 1;
+
+  margin: 20px auto 0;
+  display: block;
+}
+
+.btn:hover {
+  color: var(--shapehr-white);
+}
+
+.btn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: -2px;
+  bottom: 0;
+  background-color: var(--shapehr-black);
+  transition: transform 500ms ease;
+  transform: scale(0, 1);
+  transform-origin: left center;
+  z-index: -1;
+}
+
+.btn:hover:after {
+  transform: scale(1, 1);
+  transform-origin: right center;
+}

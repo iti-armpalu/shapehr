@@ -1,7 +1,7 @@
 .section {
   position: relative;
   display: block;
-  padding: 0 0 120px;
+  padding: 80px 0 120px;
 }
 
 .imgBox {
@@ -17,7 +17,8 @@
 .right {
   position: relative;
   display: block;
-  margin-left: 70px;
+  /* margin-left: 70px; */
+  margin-right: 70px;
 }
 
 .right .title {
@@ -65,8 +66,8 @@
 
 .sectionTitle {
   margin: 0;
-  font-size: 50px;
-  line-height: 60px;
+  font-size: 40px;
+  line-height: 46px;
   font-weight: 500;
 }
 
@@ -91,8 +92,10 @@
   position: relative;
   display: block;
   overflow: hidden;
-  padding-top: 34px;
-  padding-bottom: 27px;
+  /* padding-top: 34px; */
+  padding-top: 65px;
+  /* padding-bottom: 27px; */
+  padding-bottom: 65px;
 }
 
 .points {

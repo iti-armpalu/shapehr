@@ -1,139 +1,261 @@
-import Head from "next/head";
+import Image from "next/image";
 
 import styles from "./services.module.css";
+import leadership from "../../public/images/services/shape-hr-interim-leadership.jpeg";
+import consultancy from "../../public/images/services/shape-hr-consultancy-projects.jpg";
+import coaching from "../../public/images/services/shape-hr-coaching.jpg";
+import support from "../../public/images/services/shape-hr-support.jpg";
 
 function Services() {
   return (
-    <section 
-      id="services-section"
-      className={styles.feature}>
+    <section id="services-section" className={styles.feature}>
       <div className="container">
+        <div className={styles.sectionTitle}>
+          <span className={styles.tagline}>
+            What We Do
+          </span>
+          <h2 className={styles.title}>
+            Across 4 key pillars
+          </h2>
+        </div>
+
         <div className="row">
           <div
-            className="col-xl-4 col-lg-4 wow fadeInUp"
-            data-wow-delay="100ms"
-          >
-            <div className={styles.featureSingle}>
-              <div className={styles.featureImgBox}>
-                <div className={styles.featureImg}>
-                  <img src="images/resources/feature-one-img-1.jpg" alt="" />
-                </div>
-                <div className={styles.featureIconBox}>
-                  <div className="feature-one__icon-title-box">
-                    <h3 className={styles.featureIconTitle}>
-                      <a href="consumer-product.html">
-                        C-Suite and <br />
-                        Business Partnerships
-                      </a>
-                    </h3>
-                  </div>
-                  <div className={styles.featureIcon}>
-                    <span className="icon-strategy"></span>
-                  </div>
-                </div>
-                {/* <div className="feature-one__hover">
-                    <div
-                      className="feature-one__hover-bg"
-                      // style="background-image: url(images/resources/feature-one-hover-img-1.jpg)"
-                    ></div>
-                    <div className="feature-one__hover-icon">
-                      <span className="icon-strategy"></span>
-                    </div>
-                    <h4 className="feature-one__hover-title">
-                      <a href="consumer-product.html">Wealth Management</a>
-                    </h4>
-                    <p className="feature-one__hover-text">
-                      Lorem ipsum dolor sit am adipi sicing elit, sed do
-                      consulting firms Et leggings.
-                    </p>
-                  </div> */}
-              </div>
-            </div>
-          </div>
-
-          <div
-            className="col-xl-4 col-lg-4 wow fadeInUp"
+            className="col-xl-3 col-lg-3 wow fadeInUp"
             data-wow-delay="200ms"
           >
             <div className={styles.featureSingle}>
               <div className={styles.featureImgBox}>
                 <div className={styles.featureImg}>
-                  <img src="images/resources/feature-one-img-1.jpg" alt="" />
+                  <img
+                    src="https://images.pexels.com/photos/2977565/pexels-photo-2977565.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt=""
+                  />
                 </div>
                 <div className={styles.featureIconBox}>
                   <div className="feature-one__icon-title-box">
                     <h3 className={styles.featureIconTitle}>
-                      <a href="audit-marketing.html">
-                        Change <br />
-                        Management
-                      </a>
+                      Interim <br />
+                      Leadership
                     </h3>
                   </div>
                   <div className={styles.featureIcon}>
-                    <span className="icon-point-of-sale"></span>
+                    <img src="./images/icon/crown.svg"></img>
                   </div>
                 </div>
-                {/* <div className="feature-one__hover">
-                    <div
-                      className="feature-one__hover-bg"
-                      // style="background-image: url(images/resources/feature-one-hover-img-1.jpg)"
-                    ></div>
-                    <div className="feature-one__hover-icon">
-                      <span className="icon-point-of-sale"></span>
-                    </div>
-                    <h4 className="feature-one__hover-title">
-                      <a href="audit-marketing.html">Audit Marketing</a>
-                    </h4>
-                    <p className="feature-one__hover-text">
-                      Lorem ipsum dolor sit am adipi sicing elit, sed do
-                      consulting firms Et leggings.
-                    </p>
-                  </div> */}
+                <div className={styles.featureHover}>
+                  <div className={styles.featureHoverBg}>
+                    <Image
+                      alt="Innterim Leadership"
+                      src={leadership}
+                      placeholder="blur"
+                      quality={100}
+                      fill
+                      sizes="100vw"
+                      style={{
+                        objectFit: "cover",
+                      }}
+                    />
+                  </div>
+                  <h4 className={styles.featureHoverTitle}>
+                    Interim <br />
+                    Leadership
+                  </h4>
+                  <ul className={styles.featureHoverList}>
+                    <li className={styles.featureHoverText}>
+                      Chief People Officer
+                    </li>
+                    <li className={styles.featureHoverText}>
+                      Change & transformation programmes
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
 
           <div
-            className="col-xl-4 col-lg-4 wow fadeInUp"
-            data-wow-delay="300ms"
+            className="col-xl-3 col-lg-3 wow fadeInUp"
+            data-wow-delay="200ms"
           >
             <div className={styles.featureSingle}>
               <div className={styles.featureImgBox}>
                 <div className={styles.featureImg}>
-                  <img src="images/resources/feature-one-img-1.jpg" alt="" />
+                  <img
+                    src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt=""
+                  />
                 </div>
                 <div className={styles.featureIconBox}>
                   <div className="feature-one__icon-title-box">
                     <h3 className={styles.featureIconTitle}>
-                      <a href="financial-advice.html">
-                        Leadership Coaching <br />
-                        and Mentoring
-                      </a>
+                      Consultancy <br />& Projects
                     </h3>
                   </div>
                   <div className={styles.featureIcon}>
-                    <span className="icon-consumer-behavior"></span>
+                    <img src="./images/icon/team.svg"></img>
                   </div>
                 </div>
-                {/* <div className="feature-one__hover">
-                    <div
-                      className="feature-one__hover-bg"
-                      style="background-image: url(assets/images/resources/feature-one-hover-img-1.jpg)"
-                    ></div>
-                    <div className="feature-one__hover-icon">
-                      <span className="icon-consumer-behavior"></span>
-                    </div>
-                    <h4 className="feature-one__hover-title">
-                      <a href="financial-advice.html">Finance Consulting</a>
-                    </h4>
-                    <p className="feature-one__hover-text">
-                      Lorem ipsum dolor sit am adipi sicing elit, sed do
-                      consulting firms Et leggings.
-                    </p>
-                  </div> */}
+                <div className={styles.featureHover}>
+                  <div className={styles.featureHoverBg}>
+                    <Image
+                      alt="Consultancy and Projects"
+                      src={consultancy}
+                      placeholder="blur"
+                      quality={100}
+                      fill
+                      sizes="100vw"
+                      style={{
+                        objectFit: "cover",
+                      }}
+                    />
+                  </div>
+                  <h4 className={styles.featureHoverTitle}>
+                    Consultancy <br />& Projects
+                  </h4>
+                  <ul className={styles.featureHoverList}>
+                    <li className={styles.featureHoverText}>
+                      Business change & transformation
+                    </li>
+                    <li className={styles.featureHoverText}>
+                      Organisational design & effectiveness
+                    </li>
+                    <li className={styles.featureHoverText}>
+                      M&A, restructuring
+                    </li>
+                    <li className={styles.featureHoverText}>
+                      HR/People function diagnostics, effectiveness, change &
+                      transformation HR technology
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
+
+          <div
+            className="col-xl-3 col-lg-3 wow fadeInUp"
+            data-wow-delay="200ms"
+          >
+            <div className={styles.featureSingle}>
+              <div className={styles.featureImgBox}>
+                <div className={styles.featureImg}>
+                  <img
+                    src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                    alt=""
+                  />
+                </div>
+                <div className={styles.featureIconBox}>
+                  <div className="feature-one__icon-title-box">
+                    <h3 className={styles.featureIconTitle}>
+                      Coaching <br />& Mentoring
+                    </h3>
+                  </div>
+                  <div className={styles.featureIcon}>
+                    <img src="./images/icon/coaching.svg"></img>
+                  </div>
+                </div>
+                <div className={styles.featureHover}>
+                  <div className={styles.featureHoverBg}>
+                    <Image
+                      alt="Coaching and Mentoring"
+                      src={coaching}
+                      placeholder="blur"
+                      quality={100}
+                      fill
+                      sizes="100vw"
+                      style={{
+                        objectFit: "cover",
+                      }}
+                    />
+                  </div>
+                  <h4 className={styles.featureHoverTitle}>
+                    Coaching <br />& Mentoring
+                  </h4>
+                  <ul className={styles.featureHoverList}>
+                    <li className={styles.featureHoverText}>
+                      C-suite & leaders
+                    </li>
+                    <li className={styles.featureHoverText}>
+                      Managers
+                    </li>
+                    <li className={styles.featureHoverText}>
+                      SMEs
+                    </li>
+                    <li className={styles.featureHoverText}>
+                      High potentials
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className="col-xl-3 col-lg-3 wow fadeInUp"
+            data-wow-delay="200ms"
+          >
+            <div className={styles.featureSingle}>
+              <div className={styles.featureImgBox}>
+                <div className={styles.featureImg}>
+                  <img
+                    src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt=""
+                  />
+                </div>
+                <div className={styles.featureIconBox}>
+                  <div className="feature-one__icon-title-box">
+                    <h3 className={styles.featureIconTitle}>
+                      Advice <br />& Support
+                    </h3>
+                  </div>
+                  <div className={styles.featureIcon}>
+                    <img src="./images/icon/support.svg"></img>
+                  </div>
+                </div>
+                <div className={styles.featureHover}>
+                  <div className={styles.featureHoverBg}>
+                    <Image
+                      alt="Advice and Support"
+                      src={support}
+                      placeholder="blur"
+                      quality={100}
+                      fill
+                      sizes="100vw"
+                      style={{
+                        objectFit: "cover",
+                      }}
+                    />
+                  </div>
+                  <h4 className={styles.featureHoverTitle}>
+                    Advice <br />& Support
+                  </h4>
+                  <ul className={styles.featureHoverList}>
+                    <li className={styles.featureHoverText}>
+                      Employee issues
+                    </li>
+                    <li className={styles.featureHoverText}>
+                      Disciplines & grievances
+                    </li>
+                    <li className={styles.featureHoverText}>
+                      Investigations
+                    </li>
+                    <li className={styles.featureHoverText}>
+                      Managing redundancy
+                    </li>
+                    <li className={styles.featureHoverText}>
+                      Dispute resolution
+                    </li>
+                    <li className={styles.featureHoverText}>
+                      Niche recruitment
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
         </div>
       </div>
     </section>

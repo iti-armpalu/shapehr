@@ -1,4 +1,5 @@
-import { Link } from "react-scroll";
+import Link from "next/link";
+import { Link as LinkScroll } from "react-scroll";
 
 import styles from "./navigation-bar.module.css";
 
@@ -8,12 +9,12 @@ function NavigationBar() {
       <div className={`${styles.wrapper} clearfix`}>
         <div className={styles.wrapperLeft}>
           <div className={styles.wrapperLogo}>
-            <a href="index.html">
+            <Link href="/">
               <img
                 src="/images/resources/shapehr-logo-transparent-white.png"
                 alt="Shape HR logo"
               />
-            </a>
+            </Link>
           </div>
           <div className={styles.wrapperMainMenu}>
             {/* <a href="#" class="mobile-nav__toggler">
@@ -21,41 +22,41 @@ function NavigationBar() {
               </a> */}
             <ul className={styles.list}>
               <li>
-                <Link
+                <LinkScroll
                   to="services-section"
                   spy={true}
                   smooth={true}
                   duration={500}
                 >
-                  Services
-                </Link>
+                  What We Do
+                </LinkScroll>
               </li>
               <li>
-                <Link
+                <LinkScroll
                   to="about-section"
                   spy={true}
                   smooth={true}
                   duration={500}
                 >
-                  Our expertise
-                </Link>
+                  About Us
+                </LinkScroll>
               </li>
               <li>
-                <Link
+                <LinkScroll
                   to="expert-section"
                   spy={true}
                   smooth={true}
                   duration={500}
                 >
-                  Meet the Expert
-                </Link>
+                  Our People
+                </LinkScroll>
               </li>
             </ul>
           </div>
         </div>
         <div className={styles.wrapperRight}>
           <div className={styles.wrapperContact}>
-            <Link
+            <LinkScroll
               to="contact-section"
               className={styles.btn}
               spy={true}
@@ -63,7 +64,7 @@ function NavigationBar() {
               duration={500}
             >
               contact us
-            </Link>
+            </LinkScroll>
           </div>
         </div>
       </div>
