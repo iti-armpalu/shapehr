@@ -21,8 +21,9 @@ function Services() {
 
         <div className="row">
           <div
-            className="col-xl-3 col-lg-3 wow fadeInUp"
-            data-wow-delay="200ms"
+            className="col-12 col-md-6 col-xl-3"
+            data-aos="fade-up"
+            data-aos-delay="100"
           >
             <div className={styles.featureSingle}>
               <div className={styles.featureImgBox}>
@@ -46,7 +47,7 @@ function Services() {
                 <div className={styles.featureHover}>
                   <div className={styles.featureHoverBg}>
                     <Image
-                      alt="Innterim Leadership"
+                      alt="Interim Leadership"
                       src={leadership}
                       placeholder="blur"
                       quality={100}
@@ -58,8 +59,7 @@ function Services() {
                     />
                   </div>
                   <h4 className={styles.featureHoverTitle}>
-                    Interim <br />
-                    Leadership
+                    Interim Leadership
                   </h4>
                   <ul className={styles.featureHoverList}>
                     <li className={styles.featureHoverText}>
@@ -75,8 +75,9 @@ function Services() {
           </div>
 
           <div
-            className="col-xl-3 col-lg-3 wow fadeInUp"
-            data-wow-delay="200ms"
+            className="col-12 col-md-6 col-xl-3"
+            data-aos="fade-up"
+            data-aos-delay="200"
           >
             <div className={styles.featureSingle}>
               <div className={styles.featureImgBox}>
@@ -134,8 +135,9 @@ function Services() {
           </div>
 
           <div
-            className="col-xl-3 col-lg-3 wow fadeInUp"
-            data-wow-delay="200ms"
+            className="col-12 col-md-6 col-xl-3"
+            data-aos="fade-up"
+            data-aos-delay="300"
           >
             <div className={styles.featureSingle}>
               <div className={styles.featureImgBox}>
@@ -192,8 +194,9 @@ function Services() {
           </div>
 
           <div
-            className="col-xl-3 col-lg-3 wow fadeInUp"
-            data-wow-delay="200ms"
+            className="col-12 col-md-6 col-xl-3"
+            data-aos="fade-up"
+            data-aos-delay="400"
           >
             <div className={styles.featureSingle}>
               <div className={styles.featureImgBox}>

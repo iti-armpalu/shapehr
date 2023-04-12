@@ -60,6 +60,8 @@
   font-size: 50px;
   line-height: 60px;
   font-weight: 500;
+  width: 500px;
+  margin: 0 auto;
 }
 
 /* Form */
@@ -207,5 +209,17 @@
   transform: scale(1, 1);
   transform-origin: right center;
 }
+
+
+@media only screen and (max-width: 767px) {
+  .sectionTitle h2 {
+    font-size: 30px;
+    line-height: 40px;
+    width: 300px;
+  }
+
+}
+
+
 
 

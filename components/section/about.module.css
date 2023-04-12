@@ -66,8 +66,8 @@
 
 .sectionTitle {
   margin: 0;
-  font-size: 40px;
-  line-height: 46px;
+  font-size: 50px;
+  line-height: 55px;
   font-weight: 500;
 }
 
@@ -136,6 +136,7 @@
   color: var(--shapehr-black);
   font-weight: 500;
   margin: 0;
+
 }
 
 .points-two {
@@ -192,4 +193,20 @@
 .thmBtn:hover:after {
   transform: scale(1, 1);
   transform-origin: right center;
+}
+
+@media only screen and (max-width: 1199px) {
+
+
+  .pointsBox {
+    padding-top: 34px;
+    padding-bottom: 34px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .sectionTitle {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }

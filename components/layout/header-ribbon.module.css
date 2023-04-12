@@ -1,4 +1,4 @@
-.mainHeaderTop {
+.headerRibbon {
   position: relative;
   height: 45px;
   display: block;
@@ -63,39 +63,16 @@
   color: var(--shapehr-white);
 }
 
-.right {
-  position: relative;
-  display: flex;
-  float: right;
-  align-items: center;
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .headerRibbon {
+      display: none;
+  }
 }
 
-.social {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  padding: 10px 0;
+@media (max-width: 767px) {
+  .headerRibbon {
+    display: none;
+  }
 }
 
-.social a {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-  text-align: center;
-  color: var(--shapehr-white);
-  font-size: 15px;
-  -webkit-transition: all 500ms ease;
-  transition: all 500ms ease;
-}
 
-.social a:hover {
-  color: var(--shapehr-base);
-}
-
-.social a+a {
-  margin-left: 25px;
-}

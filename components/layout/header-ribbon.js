@@ -1,11 +1,11 @@
 import styles from "./header-ribbon.module.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationDot, faEnvelope, faLink } from "@fortawesome/free-solid-svg-icons";
+import { faLocationDot, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function HeaderRibbon() {
   return (
-    <div className={`${styles.mainHeaderTop} clearfix`}>
+    <div className={`${styles.headerRibbon} clearfix`}>
       <div className={`${styles.inner} clearfix`}>
         <div className={styles.left}>
           <ul className={styles.address}>
@@ -16,7 +16,9 @@ function HeaderRibbon() {
                 </span>
               </div>
               <div className={styles.text}>
-                <p>Based in London, United Kingdom</p>
+                <p>
+                  Based in London, United Kingdom
+                </p>
               </div>
             </li>
             <li>
@@ -26,7 +28,9 @@ function HeaderRibbon() {
                 </span>
               </div>
               <div className={styles.text}>
-                <p>simon.heath@shape-hr.com</p>
+                <p>
+                  simon.heath@shape-hr.com
+                </p>
               </div>
             </li>
           </ul>

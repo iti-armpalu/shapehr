@@ -42,6 +42,12 @@ a:visited {
   text-decoration: none;
 }
 
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
 ::placeholder {
   color: inherit;
   opacity: 1;

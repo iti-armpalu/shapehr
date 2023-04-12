@@ -4,9 +4,10 @@
   padding-top: 30px;
   margin-top: 9px;
   margin-bottom: 47px;
+  text-align: center;
 }
 
-.tagline {
+.sectionTitle span {
   position: relative;
   display: inline-block;
   color: var(--shapehr-gray);
@@ -18,7 +19,7 @@
   margin-bottom: 4px;
 }
 
-.tagline:before {
+.sectionTitle span:before {
   position: absolute;
   top: -15px;
   left: 0;
@@ -28,7 +29,7 @@
   background-color: var(--shapehr-base);
 }
 
-.tagline:after {
+.sectionTitle span:after {
   position: absolute;
   top: -15px;
   left: 17px;
@@ -36,6 +37,17 @@
   content: "";
   height: 2px;
   background-color: var(--shapehr-base);
+}
+
+.sectionTitle span:before {
+  left: 52%;
+  transform: translateX(-50%);
+}
+
+.sectionTitle span:after {
+  right: 52%;
+  left: inherit;
+  transform: translateX(-50%);
 }
 
 .title {
@@ -52,7 +64,7 @@
 .feature {
   position: relative;
   display: block;
-  padding: 50px 0 90px;
+  padding: 50px 0 50px;
 }
 
 .featureSingle {
@@ -75,7 +87,7 @@
 
 .featureImg img {
   width: 100%;
-  height: 200px;
+  height: auto;
 }
 
 .featureIconBox {
@@ -224,4 +236,18 @@
   color: var(--shapehr-white);
   line-height: 16px;
   margin: 12px 0;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+  .title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .featureIconBox {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
 }

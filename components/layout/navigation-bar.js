@@ -3,9 +3,17 @@ import { Link as LinkScroll } from "react-scroll";
 
 import styles from "./navigation-bar.module.css";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Fragment, useLayoutEffect, useState } from "react";
+import useLockBodyScroll from "../ui/use-lock-body-scroll";
+import MobileNavigationBar from "./mobile-navigation-bar";
+
 function NavigationBar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <nav className={`${styles.menu} clearfix`}>
+    <nav className={`${styles.menu} clearfix ${isOpen ? styles.locked : ""}`}>
       <div className={`${styles.wrapper} clearfix`}>
         <div className={styles.wrapperLeft}>
           <div className={styles.wrapperLogo}>
@@ -17,9 +25,22 @@ function NavigationBar() {
             </Link>
           </div>
           <div className={styles.wrapperMainMenu}>
-            {/* <a href="#" class="mobile-nav__toggler">
-                <i class="fa fa-bars"></i>
-              </a> */}
+            <div>
+              <button
+                className={styles.mobileNavToggler}
+                onClick={() => setIsOpen(!isOpen)}
+              >
+                <FontAwesomeIcon icon={faBars} />
+              </button>
+              {isOpen && ( 
+                <MobileNavigationBar
+                  isOpen={isOpen}
+                  onClick={() => setIsOpen(isOpen)}
+                  onClose={() => setIsOpen(!isOpen)}
+                />
+              )}
+            </div>
+
             <ul className={styles.list}>
               <li>
                 <LinkScroll
@@ -49,6 +70,16 @@ function NavigationBar() {
                   duration={500}
                 >
                   Our People
+                </LinkScroll>
+              </li>
+              <li className="d-xl-none">
+                <LinkScroll
+                  to="contact-section"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  Contact Us
                 </LinkScroll>
               </li>
             </ul>

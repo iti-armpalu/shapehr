@@ -203,3 +203,36 @@
   transform: scale(1, 1);
   transform-origin: right center;
 }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .main h2 {
+    font-size: 45px;
+    line-height: 45px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .main-slider h2 br {
+    display: none;
+  }
+
+  .main h2 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .main p {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .shapeOne,
+  .shapeTwo,
+  .shapeThree {
+    display: none;
+  }
+
+  .main .container {
+    padding-top: 264px!important;
+  }
+}
