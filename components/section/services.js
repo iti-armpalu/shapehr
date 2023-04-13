@@ -11,12 +11,8 @@ function Services() {
     <section id="services-section" className={styles.feature}>
       <div className="container">
         <div className={styles.sectionTitle}>
-          <span className={styles.tagline}>
-            What We Do
-          </span>
-          <h2 className={styles.title}>
-            Across 4 key pillars
-          </h2>
+          <span className={styles.tagline}>What We Do</span>
+          <h2 className={styles.title}>Across 4 key pillars</h2>
         </div>
 
         <div className="row">
@@ -114,19 +110,31 @@ function Services() {
                   <h4 className={styles.featureHoverTitle}>
                     Consultancy <br />& Projects
                   </h4>
+                  <p>HR/People Strategy</p>
                   <ul className={styles.featureHoverList}>
                     <li className={styles.featureHoverText}>
-                      Business change & transformation
+                      Business change, communication & transformation
                     </li>
                     <li className={styles.featureHoverText}>
-                      Organisational design & effectiveness
+                      Organisational design, models & effectiveness
+                    </li>
+                    <li className={styles.featureHoverText}>
+                      Employee Value Proposition
+                    </li>
+                    <li className={styles.featureHoverText}>
+                      People Lifecycle & experience
+                    </li>
+                    <li className={styles.featureHoverText}>
+                      Learning & development programmes & solutions
+                    </li>
+                    <li className={styles.featureHoverText}>
+                      Talent Acquisition & sourcing/pipeline
                     </li>
                     <li className={styles.featureHoverText}>
                       M&A, restructuring
                     </li>
                     <li className={styles.featureHoverText}>
-                      HR/People function diagnostics, effectiveness, change &
-                      transformation HR technology
+                      HR/People function diagnostics, effectiveness, change & transformation HR technology
                     </li>
                   </ul>
                 </div>
@@ -178,15 +186,9 @@ function Services() {
                     <li className={styles.featureHoverText}>
                       C-suite & leaders
                     </li>
-                    <li className={styles.featureHoverText}>
-                      Managers
-                    </li>
-                    <li className={styles.featureHoverText}>
-                      SMEs
-                    </li>
-                    <li className={styles.featureHoverText}>
-                      High potentials
-                    </li>
+                    <li className={styles.featureHoverText}>Managers</li>
+                    <li className={styles.featureHoverText}>SMEs</li>
+                    <li className={styles.featureHoverText}>High potentials</li>
                   </ul>
                 </div>
               </div>
@@ -234,15 +236,11 @@ function Services() {
                     Advice <br />& Support
                   </h4>
                   <ul className={styles.featureHoverList}>
-                    <li className={styles.featureHoverText}>
-                      Employee issues
-                    </li>
+                    <li className={styles.featureHoverText}>Employee issues</li>
                     <li className={styles.featureHoverText}>
                       Disciplines & grievances
                     </li>
-                    <li className={styles.featureHoverText}>
-                      Investigations
-                    </li>
+                    <li className={styles.featureHoverText}>Investigations</li>
                     <li className={styles.featureHoverText}>
                       Managing redundancy
                     </li>
@@ -250,15 +248,13 @@ function Services() {
                       Dispute resolution
                     </li>
                     <li className={styles.featureHoverText}>
-                      Niche recruitment
+                      Building the HR infrastructure
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
-
-
         </div>
       </div>
     </section>
