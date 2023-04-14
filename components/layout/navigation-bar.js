@@ -1,19 +1,34 @@
 import Link from "next/link";
 import { Link as LinkScroll } from "react-scroll";
+import { useEffect, useState } from "react";
 
 import styles from "./navigation-bar.module.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { Fragment, useLayoutEffect, useState } from "react";
-import useLockBodyScroll from "../ui/use-lock-body-scroll";
+
 import MobileNavigationBar from "./mobile-navigation-bar";
 
 function NavigationBar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY > 130);
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  });
 
   return (
-    <nav className={`${styles.menu} clearfix ${isOpen ? styles.locked : ""}`}>
+    <nav
+      className={`${styles.menu} clearfix} ${
+        scrollY ? styles.strickyHeader : ""
+      }`}
+    >
       <div className={`${styles.wrapper} clearfix`}>
         <div className={styles.wrapperLeft}>
           <div className={styles.wrapperLogo}>
@@ -32,7 +47,7 @@ function NavigationBar() {
               >
                 <FontAwesomeIcon icon={faBars} />
               </button>
-              {isOpen && ( 
+              {isOpen && (
                 <MobileNavigationBar
                   isOpen={isOpen}
                   onClick={() => setIsOpen(isOpen)}
@@ -40,7 +55,6 @@ function NavigationBar() {
                 />
               )}
             </div>
-
             <ul className={styles.list}>
               <li>
                 <LinkScroll

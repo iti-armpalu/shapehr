@@ -26,7 +26,7 @@
 }
 
 .wrapperLogo img {
-  height: 80px;
+  height: 70px;
 }
 
 .wrapperLogo:before {
@@ -46,10 +46,15 @@
   float: left;
 }
 
+.strickyHeader.menu {
+  padding: 0 80px;
+  background-color: var(--shapehr-black);
+}
+
 .menu .list,
 .menu .list ul,
-.stricky-header .list,
-.stricky-header .list ul {
+.strickyHeader .list,
+.strickyHeader .list ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -66,7 +71,7 @@
   position: relative;
   display: flex;
   float: right;
-  padding: 28px 0;
+  padding: 24px 0;
   align-items: center;
 }
 
@@ -136,26 +141,26 @@
 
   .menu .list,
   .menu .list ul,
-  .stricky-header .list,
-  .stricky-header .list ul {
+  .strickyHeader .list,
+  .strickyHeader .list ul {
     display: flex;
   }
 }
 
 .menu .list>li,
-.stricky-header .list>li {
-  padding-top: 42px;
-  padding-bottom: 42px;
+.strickyHeader .list>li {
+  padding-top: 38px;
+  padding-bottom: 38px;
   position: relative;
 }
 
 .menu .list>li+li,
-.stricky-header .list>li+li {
+.strickyHeader .list>li+li {
   margin-left: 70px;
 }
 
 .menu .list>li>a,
-.stricky-header .list>li>a {
+.strickyHeader .list>li>a {
   font-size: 16px;
   display: flex;
   align-items: center;
@@ -166,7 +171,7 @@
 }
 
 .menu .list>li>a::before,
-.stricky-header .list>li>a::before {
+.strickyHeader .list>li>a::before {
   content: "";
   height: 2px;
   width: 12px;
@@ -183,15 +188,15 @@
 
 .menu .list>li.current>a,
 .menu .list>li:hover>a,
-.stricky-header .list>li.current>a,
-.stricky-header .list>li:hover>a {
+.strickyHeader .list>li.current>a,
+.strickyHeader .list>li:hover>a {
   color: var(--shapehr-white);
 }
 
 .menu .list>li.current>a::before,
 .menu .list>li:hover>a::before,
-.stricky-header .list>li.current>a::before,
-.stricky-header .list>li:hover>a::before {
+.strickyHeader .list>li.current>a::before,
+.strickyHeader .list>li:hover>a::before {
   transform: scale(1, 1);
   transform-origin: right center;
 }
@@ -205,7 +210,7 @@
 }
 
 .menu .list li ul,
-.stricky-header .list li ul {
+.strickyHeader .list li ul {
   position: absolute;
   top: 100%;
   left: 0;
@@ -222,25 +227,25 @@
 }
 
 .menu .list li:hover>ul,
-.stricky-header .list li:hover>ul {
+.strickyHeader .list li:hover>ul {
   opacity: 1;
   visibility: visible;
 }
 
 .menu .list li ul li,
-.stricky-header .list li ul li {
+.strickyHeader .list li ul li {
   flex: 1 1 100%;
   width: 100%;
   position: relative;
 }
 
 .menu .list li ul li+li,
-.stricky-header .list li ul li+li {
+.strickyHeader .list li ul li+li {
   border-top: 1px solid RGBA(var(--shapehr-black), 0.1);
 }
 
 .menu .list li ul li a,
-.stricky-header .list li ul li a {
+.strickyHeader .list li ul li a {
   font-size: 16px;
   line-height: 30px;
   color: var(--shapehr-black);
@@ -256,51 +261,70 @@
 }
 
 .menu .list li ul li:hover>a,
-.stricky-header .list li ul li:hover>a {
+.strickyHeader .list li ul li:hover>a {
   background-color: var(--shapehr-base);
   color: var(--shapehr-white);
 }
 
 .menu .list li ul li>ul,
-.stricky-header .list li ul li>ul {
+.strickyHeader .list li ul li>ul {
   top: 0;
   left: 100%;
 }
 
 .menu .list li ul li>ul.right-align,
-.stricky-header .list li ul li>ul.right-align {
+.strickyHeader .list li ul li>ul.rightAlign {
   top: 0;
   left: auto;
   right: 100%;
 }
 
 .menu .list li ul li>ul ul,
-.stricky-header .list li ul li>ul ul {
+.strickyHeader .list li ul li>ul ul {
   display: none;
 }
 
-.stricky-header {
+.strickyHeader {
   position: fixed;
   z-index: 991;
   top: 0;
   left: 0;
   background-color: #fff;
   width: 100%;
-  visibility: hidden;
-  transform: translateY(-120%);
-  transition: transform 500ms ease, visibility 500ms ease;
+  /* visibility: hidden;
+  transform: translateY(-120%); */
+  /* transform: translateY(0); */
+  /* visibility: visible; */
+  /* transition: transform 500ms ease, visibility 500ms ease; */
   box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05);
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(-120%);
+    visibility: hidden;
+  }
+  to {
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+
+.strickyHeader.strickyFixed {
+  transform: translateY(0);
+  visibility: visible;
 }
 
 @media (max-width: 1199px) {
-  .stricky-header {
+  .strickyHeader {
     display: none !important;
   }
 
   .wrapperRight {
     display: none;
   }
-  
+
 }
 
 

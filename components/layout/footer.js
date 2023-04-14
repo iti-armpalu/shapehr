@@ -6,7 +6,6 @@ import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
 
 function Footer() {
   const [scrollY, setScrollY] = useState(0);
-
   const isBrowser = () => typeof window !== "undefined"; //The approach recommended by Next.js
 
   function scrollToTop() {
@@ -16,34 +15,30 @@ function Footer() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrollY(window.scrollY);
+      setScrollY(window.scrollY > 400);
     };
 
     handleScroll();
 
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
-    <footer className={styles.siteFooter}>
+    <footer className={styles.footer}>
       <div className="container">
-        <div className={styles.siteFooterBottom}>
-          <p className={styles.siteFooterBottomText}>© 2023 Shape HR Ltd.</p>
+        <div className={styles.bottom}>
+          <p>© 2023 Shape HR Ltd.</p>
         </div>
-        {scrollY > 400 ? (
-          <div className={styles.scrollToTop} onClick={scrollToTop}>
-            <span>
-              <FontAwesomeIcon icon={faAngleUp} />
-            </span>
-          </div>
-        ) : (
-          <div className={styles.scrollToTopNoShow} onClick={scrollToTop}>
+        {scrollY && (
+          <div
+            className={` ${
+              scrollY ? styles.scrollToTopShow : styles.scrollToTopNoShow
+            }`}
+            onClick={scrollToTop}
+          >
             <span>
               <FontAwesomeIcon icon={faAngleUp} />
             </span>

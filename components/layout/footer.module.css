@@ -1,9 +1,9 @@
-.siteFooter {
+.footer {
   position: relative;
   display: block;
 }
 
-.siteFooterBottom {
+.bottom {
   position: relative;
   display: block;
   text-align: center;
@@ -12,7 +12,7 @@
   margin-top: 69px;
 }
 
-.siteFooterBottomText {
+.bottom p {
   font-size: 16px;
   color: #9baebd;
   font-weight: 500;
@@ -21,7 +21,7 @@
 }
 
 /* scroll to top */
-.scrollToTop {
+.scrollToTopShow {
   display: inline-block;
   width: 45px;
   height: 45px;
@@ -32,6 +32,18 @@
   z-index: 99;
   text-align: center;
   border-radius: 50%;
+  transition: all .4s ease; /* slow transition when hovered over */
+  animation: fadeIn 2s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  from { 
+    opacity: 0;
+  }
+  to { 
+    opacity: 1;
+  }
 }
 
 .scrollToTopNoShow {
@@ -45,7 +57,7 @@
   z-index: 99;
   text-align: center;
   border-radius: 50%;
-  animation: slideaway 2s ease;
+  animation: slideaway 5s ease;
   animation-fill-mode: forwards;
 }
 
@@ -58,18 +70,18 @@
   }
 }
 
-.scrollToTop span,
+.scrollToTopShow span,
 .scrollToTopNoShow span {
   color: #ffffff;
   font-size: 18px;
   line-height: 45px;
 }
 
-.scrollToTop:hover {
+.scrollToTopShow:hover {
   background-color: var(--shapehr-black);
 }
 
-.scrollToTop:hover span,
+.scrollToTopShow:hover span,
 .scrollToTopNoShow span {
   color: #fff;
 }
