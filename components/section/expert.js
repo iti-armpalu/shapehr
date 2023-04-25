@@ -35,21 +35,57 @@ function Expert() {
         <div className="container">
           <div className={styles.sectionTitle}>
             <span className={styles.tagline} data-aos="fade-left">
-              Our People
+              Our Beliefs
             </span>
-            <h2 className={styles.title} data-aos="fade-left" data-aos-delay="100">
+            {/* <h2 className={styles.title} data-aos="fade-left" data-aos-delay="100">
               Simon Heath
-            </h2>
+            </h2> */}
           </div>
 
-          <div className={`row ${styles.bottom} `}>
-            <div 
+          <div className={`row ${styles.bottom} ${styles.box}  `}>
+            <div className="col-12">
+              <div className={styles.icon}>
+                <FontAwesomeIcon icon={faPlay} rotation={270} />
+              </div>
+              <div className={styles.text}>
+                <p>
+                  We believe in down-to-earth, pragmatic, solution-creating
+                  approaches.
+                </p>
+              </div>
+            </div>
+
+            <div className="col-12">
+              <div className={styles.icon}>
+                <FontAwesomeIcon icon={faPlay} rotation={270} />
+              </div>
+              <div className={styles.text}>
+                <p>
+                  We believe in balancing strategy & practical delivery, our outcomes always being commercial & human-centric.
+                </p>
+              </div>
+            </div>
+
+            <div className="col-12">
+              <div className={styles.icon}>
+                <FontAwesomeIcon icon={faPlay} rotation={270} />
+              </div>
+              <div className={styles.text}>
+                <p>
+                  We believes businesses most effectively change, transform & realise their purpose, ambitions & results when their People &  HR/People function are organised, prepared & aligned for the journey ahead.
+                </p>
+              </div>
+            </div>
+
+           
+            
+            {/* <div 
               className={`col-12 col-lg-5 ${styles.sectionImg} `}
               data-aos="fade-up" data-aos-delay="100">
               <img src="images/team/SPH.jpg" alt="" />
-            </div>
+            </div> */}
 
-            <div className="col-12 col-lg-7">
+            {/* <div className="col-12 col-lg-7">
               <div className={styles.box}>
                 <p data-aos="fade-left" data-aos-delay="200">
                   Simon is particularly passionate about helping businesses
@@ -138,7 +174,7 @@ function Expert() {
                   </ul>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

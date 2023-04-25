@@ -128,13 +128,20 @@
   justify-content: center; */
   z-index: 1;
   padding-left: 40px;
-  text-align: end;
 }
 
-.box ul {
+/* .box ul {
   position: relative;
   color: var(--shapehr-black);
   padding-top: 20px;
+} */
+
+.box > div {
+  position: relative;
+  color: var(--shapehr-black);
+  /* padding-top: 20px; */
+  /* display: flex; */
+  padding: 8px 0 8px;
 }
 
 .box li {

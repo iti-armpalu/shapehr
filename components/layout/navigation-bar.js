@@ -83,7 +83,7 @@ function NavigationBar() {
                   smooth={true}
                   duration={500}
                 >
-                  Our People
+                  Our Beliefs
                 </LinkScroll>
               </li>
               <li className="d-xl-none">

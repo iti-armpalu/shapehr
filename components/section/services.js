@@ -12,6 +12,9 @@ function Services() {
       <div className="container">
         <div className={styles.sectionTitle}>
           <span className={styles.tagline}>What We Do</span>
+          <p>
+            We are passionate about helping businesses imagine, articulate & shape their aspirational future - from understanding the current “as is” positions and impact, to detailing the journeys & milestones required to deliver successful transformations.
+          </p>
           <h2 className={styles.title}>Across 4 key pillars</h2>
         </div>
 
@@ -62,7 +65,10 @@ function Services() {
                       Chief People Officer
                     </li>
                     <li className={styles.featureHoverText}>
-                      Change & transformation programmes
+                      HR Transformation Programmes
+                    </li>
+                    <li className={styles.featureHoverText}>
+                      Workday HCM Programmes & Deployment Start Up & Scale Up
                     </li>
                   </ul>
                 </div>
@@ -110,31 +116,39 @@ function Services() {
                   <h4 className={styles.featureHoverTitle}>
                     Consultancy <br />& Projects
                   </h4>
-                  <p>HR/People Strategy</p>
                   <ul className={styles.featureHoverList}>
                     <li className={styles.featureHoverText}>
-                      Business change, communication & transformation
+                      HR strategy
                     </li>
                     <li className={styles.featureHoverText}>
-                      Organisational design, models & effectiveness
+                      HR transformation
                     </li>
                     <li className={styles.featureHoverText}>
-                      Employee Value Proposition
+                      Organisational design, models & effectiveness start up & scale up
                     </li>
                     <li className={styles.featureHoverText}>
-                      People Lifecycle & experience
+                      Employee value proposition
                     </li>
                     <li className={styles.featureHoverText}>
-                      Learning & development programmes & solutions
+                      People lifecycle & experience
                     </li>
                     <li className={styles.featureHoverText}>
-                      Talent Acquisition & sourcing/pipeline
+                      Dynamic talent management & succession planning
+                    </li>
+                    <li className={styles.featureHoverText}>
+                      Learning & development programmes design & delivery
+                    </li>
+                    <li className={styles.featureHoverText}>
+                      Talent Acquisition & sourcing/pipeline development
                     </li>
                     <li className={styles.featureHoverText}>
                       M&A, restructuring
                     </li>
                     <li className={styles.featureHoverText}>
-                      HR/People function diagnostics, effectiveness, change & transformation HR technology
+                      HR/People function effectiveness diagnostics, change & transformation
+                    </li>
+                    <li className={styles.featureHoverText}>
+                      Workday HCM Programmes
                     </li>
                   </ul>
                 </div>
@@ -187,7 +201,7 @@ function Services() {
                       C-suite & leaders
                     </li>
                     <li className={styles.featureHoverText}>Managers</li>
-                    <li className={styles.featureHoverText}>SMEs</li>
+                    <li className={styles.featureHoverText}>Subject Matter Experts</li>
                     <li className={styles.featureHoverText}>High potentials</li>
                   </ul>
                 </div>

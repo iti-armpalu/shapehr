@@ -46,10 +46,12 @@ function Hero() {
               <div className="col-xl-8">
                 <div className={styles.mainContent}>
                   <h2>
-                    Common-sense interim HR/People leadership, consulting, coaching, support & advice for businesses & business people.
+                    {/* Common-sense interim HR/People leadership, consulting, coaching, support & advice for businesses & business people. */}
+                    Pragmatic, solution-driven interim HR/People leadership, consulting, coaching, support & advice for businesses and business people.
                   </h2>
                   <p>
-                    Always providing real, effective & pragmatic solutions
+                    {/* Always providing real, effective & pragmatic solutions */}
+                    Enabling commercial & human-centric outcomes
                   </p>
                   <Link
                     to="services-section"

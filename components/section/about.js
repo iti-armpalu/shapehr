@@ -126,7 +126,8 @@ function About() {
                 </ul>
               </div>
               <p className={styles.rightText}>
-                In addition to Simon's down-to-earth, pragmatic, solution-creating approach, he believes that businesses most effectively change, transform & realise their ambitions & results when their People & their HR/People function are organised, prepared & aligned for the journey ahead.
+                {/* In addition to Simon's down-to-earth, pragmatic, solution-creating approach, he believes that businesses most effectively change, transform & realise their ambitions & results when their People & their HR/People function are organised, prepared & aligned for the journey ahead. */}
+                ShapeHR Ltd provides common-sense, solution driven interim HR/People leadership, consulting, coaching, support & advice to businesses & business people.
               </p>
             </div>
           </div>
