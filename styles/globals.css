@@ -1,3 +1,5 @@
+
+
 :root {
   --shapehr-font: "DM Sans", sans-serif;
   --shapehr-gray: #7a838b;
@@ -277,3 +279,5 @@ ul {
 .scroll-to-top:hover i {
   color: #fff;
 }
+
+@import "swiper/css";

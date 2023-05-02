@@ -60,7 +60,7 @@ function Hero() {
                     smooth={true}
                     duration={500}
                   >
-                    our services
+                    what we do
                   </Link>
                 </div>
               </div>

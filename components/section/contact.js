@@ -89,20 +89,31 @@ function Contact() {
   return (
     <section id="contact-section" className={styles.page}>
       <div className={styles.sectionTitle}>
-        <span>Contact Us</span>
-        <h2>Got a question? Send us a message</h2>
+        <span
+        data-aos="fade-up"
+        data-aos-delay="100">
+          Contact Us
+          </span>
+        <h2 
+          data-aos="fade-up"
+          data-aos-delay="100">
+            Get in touch for any further questions, projects & business partnerships
+        </h2>
       </div>
       <div className="container">
         <div className="row justify-content-evenly">
           <div className="col-12 col-lg-6 col-xl-6 ">
-            <div className={styles.form}>
+            <div 
+              className={styles.form}
+              data-aos="fade-up"
+              data-aos-delay="300">
               <form onSubmit={sendMessageHandler}>
                 <div className="row">
                   <div className="col-xl-6">
                     <div className={styles.inputWrap}>
                       <input
                         type="text"
-                        placeholder="Your Name"
+                        placeholder="Name"
                         name="name"
                         id="name"
                         required
@@ -154,7 +165,10 @@ function Contact() {
             </div>
           </div>
           <div className="col-12 col-lg-6 col-xl-4">
-            <div className={styles.details}>
+            <div 
+              className={styles.details}
+              data-aos="fade-up"
+              data-aos-delay="400">
               <ul>
                 <li>
                   <span>Call:</span>
@@ -167,10 +181,14 @@ function Contact() {
                 <li>
                   <span>Connect through social:</span>
                   <p className={styles.social}>
-                    <Link href="https://www.linkedin.com/in/simon-heath-81a6271/">
+                    <a
+                      target="_blank"
+                      href="https://www.linkedin.com/company/93843807"
+               
+                      >
                       <FontAwesomeIcon icon={faLinkedinIn} />
-                    </Link>
-                    <span>/simon-heath</span>
+                    </a>
+                    <span>/shapehr-ltd</span>
                   </p>
                 </li>
               </ul>

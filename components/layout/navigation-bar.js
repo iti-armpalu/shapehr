@@ -25,9 +25,7 @@ function NavigationBar() {
 
   return (
     <nav
-      className={`${styles.menu} clearfix} ${
-        scrollY ? styles.strickyHeader : ""
-      }`}
+      className={`${styles.menu} clearfix} ${scrollY ? styles.strickyHeader : styles.overlay}`}
     >
       <div className={`${styles.wrapper} clearfix`}>
         <div className={styles.wrapperLeft}>
@@ -83,7 +81,7 @@ function NavigationBar() {
                   smooth={true}
                   duration={500}
                 >
-                  Our Beliefs
+                  Real Reviews
                 </LinkScroll>
               </li>
               <li className="d-xl-none">

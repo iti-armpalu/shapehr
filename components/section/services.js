@@ -11,11 +11,23 @@ function Services() {
     <section id="services-section" className={styles.feature}>
       <div className="container">
         <div className={styles.sectionTitle}>
-          <span className={styles.tagline}>What We Do</span>
-          <p>
-            We are passionate about helping businesses imagine, articulate & shape their aspirational future - from understanding the current “as is” positions and impact, to detailing the journeys & milestones required to deliver successful transformations.
+          <span 
+            className={styles.tagline}
+            data-aos="fade-up"
+            data-aos-delay="100">
+            What We Do
+            </span>
+          <p
+            data-aos="fade-up"
+            data-aos-delay="200">
+              We are passionate about helping businesses imagine, articulate & shape their aspirational future - from understanding the current “as is” positions and impact, to detailing the journeys & milestones required to deliver successful transformations.
           </p>
-          <h2 className={styles.title}>Across 4 key pillars</h2>
+          <h2 
+            className={styles.title} 
+            data-aos="fade-up"
+            data-aos-delay="300">
+              Across 4 key pillars
+          </h2>
         </div>
 
         <div className="row">
@@ -65,10 +77,16 @@ function Services() {
                       Chief People Officer
                     </li>
                     <li className={styles.featureHoverText}>
+                      HR Director
+                    </li>
+                    <li className={styles.featureHoverText}>
                       HR Transformation Programmes
                     </li>
                     <li className={styles.featureHoverText}>
-                      Workday HCM Programmes & Deployment Start Up & Scale Up
+                      Workday HCM Programmes & Deployment
+                    </li>
+                    <li className={styles.featureHoverText}>
+                      Start Up & Scale Up
                     </li>
                   </ul>
                 </div>
@@ -118,34 +136,37 @@ function Services() {
                   </h4>
                   <ul className={styles.featureHoverList}>
                     <li className={styles.featureHoverText}>
-                      HR strategy
+                      HR Strategy
                     </li>
                     <li className={styles.featureHoverText}>
-                      HR transformation
+                      HR Transformation
                     </li>
                     <li className={styles.featureHoverText}>
-                      Organisational design, models & effectiveness start up & scale up
+                      Organisational Design, Models & Effectiveness
                     </li>
                     <li className={styles.featureHoverText}>
-                      Employee value proposition
+                      Start Up & Scale Up
                     </li>
                     <li className={styles.featureHoverText}>
-                      People lifecycle & experience
+                      Employee Value Proposition
                     </li>
                     <li className={styles.featureHoverText}>
-                      Dynamic talent management & succession planning
+                      People Lifecycle & Experience
                     </li>
                     <li className={styles.featureHoverText}>
-                      Learning & development programmes design & delivery
+                      Dynamic Talent Management & Succession Planning
                     </li>
                     <li className={styles.featureHoverText}>
-                      Talent Acquisition & sourcing/pipeline development
+                      Learning & Development Programmes Design & Delivery
                     </li>
                     <li className={styles.featureHoverText}>
-                      M&A, restructuring
+                      Talent Acquisition & Sourcing/Pipeline Development
                     </li>
                     <li className={styles.featureHoverText}>
-                      HR/People function effectiveness diagnostics, change & transformation
+                      M&A, Restructuring
+                    </li>
+                    <li className={styles.featureHoverText}>
+                      HR/People Function Effectiveness Diagnostics, Change & Transformation
                     </li>
                     <li className={styles.featureHoverText}>
                       Workday HCM Programmes
@@ -198,11 +219,11 @@ function Services() {
                   </h4>
                   <ul className={styles.featureHoverList}>
                     <li className={styles.featureHoverText}>
-                      C-suite & leaders
+                      C-Suite & Leaders
                     </li>
                     <li className={styles.featureHoverText}>Managers</li>
                     <li className={styles.featureHoverText}>Subject Matter Experts</li>
-                    <li className={styles.featureHoverText}>High potentials</li>
+                    <li className={styles.featureHoverText}>High Potentials</li>
                   </ul>
                 </div>
               </div>
@@ -250,19 +271,19 @@ function Services() {
                     Advice <br />& Support
                   </h4>
                   <ul className={styles.featureHoverList}>
-                    <li className={styles.featureHoverText}>Employee issues</li>
+                    <li className={styles.featureHoverText}>Employee Issues</li>
                     <li className={styles.featureHoverText}>
-                      Disciplines & grievances
+                      Disciplines & Grievances
                     </li>
                     <li className={styles.featureHoverText}>Investigations</li>
                     <li className={styles.featureHoverText}>
-                      Managing redundancy
+                      Managing Redundancy
                     </li>
                     <li className={styles.featureHoverText}>
-                      Dispute resolution
+                      Dispute & Conflict Resolutions
                     </li>
                     <li className={styles.featureHoverText}>
-                      Building the HR infrastructure
+                      Building the HR Infrastructure
                     </li>
                   </ul>
                 </div>

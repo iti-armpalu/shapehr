@@ -8,12 +8,13 @@ import {
   faSlash,
   faWater,
 } from "@fortawesome/free-solid-svg-icons";
+import TestimonialSwiper from "./testimonial/testimonialSwiper";
 
 function Expert() {
   return (
     <section id="expert-section" className={styles.section}>
       <div className={styles.sectionWrap}>
-        <div
+        {/* <div
           className={styles.shapeTwo}
           data-wow-delay="100ms"
           data-wow-duration="2500ms"
@@ -23,7 +24,7 @@ function Expert() {
 
         <div className={styles.shapeThree}>
           <img src="/images/shapes/counter-one-shape-3.png" alt="" />
-        </div>
+        </div> */}
 
         <div
           className={styles.sectionBg}
@@ -35,147 +36,18 @@ function Expert() {
         <div className="container">
           <div className={styles.sectionTitle}>
             <span className={styles.tagline} data-aos="fade-left">
-              Our Beliefs
+              Real Reviews
             </span>
-            {/* <h2 className={styles.title} data-aos="fade-left" data-aos-delay="100">
-              Simon Heath
-            </h2> */}
+            <h2
+              className={styles.title}
+              data-aos="fade-left"
+              data-aos-delay="100"
+            >
+              from Real People
+            </h2>
           </div>
 
-          <div className={`row ${styles.bottom} ${styles.box}  `}>
-            <div className="col-12">
-              <div className={styles.icon}>
-                <FontAwesomeIcon icon={faPlay} rotation={270} />
-              </div>
-              <div className={styles.text}>
-                <p>
-                  We believe in down-to-earth, pragmatic, solution-creating
-                  approaches.
-                </p>
-              </div>
-            </div>
-
-            <div className="col-12">
-              <div className={styles.icon}>
-                <FontAwesomeIcon icon={faPlay} rotation={270} />
-              </div>
-              <div className={styles.text}>
-                <p>
-                  We believe in balancing strategy & practical delivery, our outcomes always being commercial & human-centric.
-                </p>
-              </div>
-            </div>
-
-            <div className="col-12">
-              <div className={styles.icon}>
-                <FontAwesomeIcon icon={faPlay} rotation={270} />
-              </div>
-              <div className={styles.text}>
-                <p>
-                  We believes businesses most effectively change, transform & realise their purpose, ambitions & results when their People &  HR/People function are organised, prepared & aligned for the journey ahead.
-                </p>
-              </div>
-            </div>
-
-           
-            
-            {/* <div 
-              className={`col-12 col-lg-5 ${styles.sectionImg} `}
-              data-aos="fade-up" data-aos-delay="100">
-              <img src="images/team/SPH.jpg" alt="" />
-            </div> */}
-
-            {/* <div className="col-12 col-lg-7">
-              <div className={styles.box}>
-                <p data-aos="fade-left" data-aos-delay="200">
-                  Simon is particularly passionate about helping businesses
-                  imagine, articulate and shape their aspirational future - from
-                  understanding the current “as is” positions and impact, to
-                  detailing the journeys and milestones required to deliver
-                  successful transformations.
-                </p>
-                <div data-aos="fade-up" data-aos-delay="300">
-                  <ul>
-                    <li>
-                      <div className={styles.icon}>
-                        <FontAwesomeIcon icon={faPlay} rotation={270} />
-                      </div>
-                      <div className={styles.text}>
-                        <p>
-                          WPP - Global HR Transformation Lead & HCM Product
-                          Owner
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <div className={styles.icon}>
-                        <FontAwesomeIcon icon={faPlay} rotation={270} />
-                      </div>
-                      <div className={styles.text}>
-                        <p>Geometry - Global Chief People Officer</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div className={styles.icon}>
-                        <FontAwesomeIcon icon={faPlay} rotation={270} />
-                      </div>
-                      <div className={styles.text}>
-                        <p>DMG Media - HR Director</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div className={styles.icon}>
-                        <FontAwesomeIcon icon={faPlay} rotation={270} />
-                      </div>
-                      <div className={styles.text}>
-                        <p>Saatchi & Saatchi - EMEA HR Director</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div className={styles.icon}>
-                        <FontAwesomeIcon icon={faPlay} rotation={270} />
-                      </div>
-                      <div className={styles.text}>
-                        <p>Misys Plc - Global HR Director - Banking</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div className={styles.icon}>
-                        <FontAwesomeIcon icon={faPlay} rotation={270} />
-                      </div>
-                      <div className={styles.text}>
-                        <p>Eidos Plc - Group HR Director</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div className={styles.icon}>
-                        <FontAwesomeIcon icon={faPlay} rotation={270} />
-                      </div>
-                      <div className={styles.text}>
-                        <p>Virgin Cinemas - HR Manager</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div className={styles.icon}>
-                        <FontAwesomeIcon icon={faPlay} rotation={270} />
-                      </div>
-                      <div className={styles.text}>
-                        <p>Blockbuster video - HR Officer</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div className={styles.icon}>
-                        <FontAwesomeIcon icon={faPlay} rotation={270} />
-                      </div>
-                      <div className={styles.text}>
-                        <p>Conder Plc - HR Graduate / Personnel Officer</p>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div> */}
-          </div>
+          <TestimonialSwiper />
         </div>
       </div>
     </section>

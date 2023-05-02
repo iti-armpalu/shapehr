@@ -1,7 +1,7 @@
 .section {
   position: relative;
   display: block;
-  padding: 80px 0 120px;
+  padding: 80px 0 60px;
 }
 
 .imgBox {
@@ -18,7 +18,7 @@
   position: relative;
   display: block;
   /* margin-left: 70px; */
-  margin-right: 70px;
+  margin-right: 10px;
 }
 
 .right .title {
@@ -66,8 +66,8 @@
 
 .sectionTitle {
   margin: 0;
-  font-size: 50px;
-  line-height: 55px;
+  font-size: 40px;
+  line-height: 54px;
   font-weight: 500;
 }
 
@@ -95,7 +95,7 @@
   /* padding-top: 34px; */
   padding-top: 65px;
   /* padding-bottom: 27px; */
-  padding-bottom: 65px;
+  /* padding-bottom: 15px; */
 }
 
 .points {
@@ -113,6 +113,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  margin-bottom: 12px;
 }
 
 .points li .icon {
@@ -136,7 +137,7 @@
   color: var(--shapehr-black);
   font-weight: 500;
   margin: 0;
-
+  font-size: 24px;
 }
 
 .points-two {
@@ -144,7 +145,7 @@
 }
 
 .rightText {
-  margin-top: 32px;
+  margin-top: 38px;
 
 }
 
@@ -196,12 +197,162 @@
   transform-origin: right center;
 }
 
+.beliefBox {
+  position: relative;
+  background-color: #edf3f6;
+  box-shadow: 0px 10px 60px 0px rgb(0, 0, 0, 0.05);
+  padding: 30px 30px 30px;
+  height: 350px;
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.beliefBox:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  background-color: var(--shapehr-base);
+  height: 2px;
+  transition: transform 500ms ease;
+  transform: scale(0, 1);
+  transform-origin: left center;
+}
+
+.beliefBox:hover:before {
+  transform: scale(1, 1);
+  transform-origin: right center;
+}
+
+.beliefBox:hover .testimonial-one__author-img img {
+  border: 2px solid var(--shapehr-base);
+}
+
+.beliefBox p {
+  font-size: 18px;
+  margin: 0;
+  font-style: italic;
+  line-height: 32px;
+  margin: auto 0;
+}
+
+.founder {
+
+    height: 150px;
+    object-fit: cover;
+  margin-right: 22px;
+}
+
+.beliefTitle {
+  font-size: 16px;
+  color: var(--shapehr-base);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.shapeTwo {
+  position: absolute;
+  bottom: -240px;
+  left: 45px;
+}
+
+.shapeTwo img {
+  position: relative;
+  z-index: 2;
+  -webkit-animation: animation1 5s ease-in infinite;
+  animation: animation1 5s ease-in infinite;
+}
+
+@keyframes animation1 {
+	0%,
+	100% {
+		-webkit-transform: rotate(0deg) translateX(0);
+		transform: rotate(0deg) translateX(0);
+	}
+
+	25%,
+	75% {
+		-webkit-transform: rotate(5deg) translateX(15px);
+		transform: rotate(5deg) translateX(15px);
+	}
+
+	50% {
+		-webkit-transform: rotate(10deg) translateX(30px);
+		transform: rotate(10deg) translateX(30px);
+	}
+}
+
+.shapeThree {
+  position: absolute;
+  bottom: 55px;
+  left: 150px;
+  -webkit-animation-name: squareMover;
+  animation-name: squareMover;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-perspective: 100px;
+  perspective: 100px;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  z-index: 3;
+}
+
+
+@keyframes squareMover {
+
+  0%,
+  100% {
+    -webkit-transform: translate(0, 0) rotate(0);
+    transform: translate(0, 0) rotate(0);
+  }
+
+  20%,
+  60% {
+    -webkit-transform: translate(20px, 40px) rotate(180deg);
+    transform: translate(20px, 40px) rotate(180deg);
+  }
+
+  30%,
+  80% {
+    -webkit-transform: translate(40px, 60px) rotate(0deg);
+    transform: translate(40px, 60px) rotate(0deg);
+  }
+}
+
 @media only screen and (max-width: 1199px) {
 
 
   .pointsBox {
     padding-top: 34px;
     padding-bottom: 34px;
+  }
+
+  .rightText {
+    margin-top: 0;
+  
+  }
+
+  .beliefBox {
+    height: 380px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .beliefBox {
+    height: 190px;
   }
 }
 
@@ -210,4 +361,27 @@
     font-size: 30px;
     line-height: 40px;
   }
+
+  .beliefBox {
+    height: 260px;
+    padding: 20px 20px;
+  }
+
+  .beliefBox p {
+    font-size: 16px;
+  }
+
+  .businessStartText {
+    font-size: 18px;
+  }
+
+  .points li .text p {
+    font-size: 18px;
+  }
+
+  .shapeTwo, .shapeThree {
+    display: none;
+  }
+
+  
 }

@@ -7,6 +7,7 @@ import TrustedBy from "../components/section/trusted-by";
 import About from "../components/section/about";
 import Expert from "../components/section/expert";
 import ComingSoon from "../components/section/coming-soon";
+import Testimonial from "../components/section/testimonial/testimonial";
 
 
 function HomePage(props) {
@@ -24,6 +25,7 @@ function HomePage(props) {
       <About />
       {/* <TrustedBy /> */}
       <Expert />
+      {/* <Testimonial /> */}
       <Contact />
     </div>
   );
