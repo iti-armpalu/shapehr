@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import image from "../../public/images/backgrounds/shape-hr-hero-background-1.jpeg";
+import image from "../../public/images/backgrounds/shape-hr-hero-background.avif";
 
 import styles from "./coming-soon.module.css";
 

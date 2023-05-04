@@ -1,25 +1,18 @@
-import Head from "next/head";
 import Image from "next/image";
 import { Link } from "react-scroll";
 
-// import image from "../../public/images/backgrounds/shape-hr-hero-background-1.jpeg";
-import image from "../../public/images/backgrounds/shape-hr-hero-background-7.avif";
+import bgImage from "../../public/images/backgrounds/shape-hr-hero-background.avif";
 
 import styles from "./hero.module.css";
 
 function Hero() {
   return (
     <div>
-      <Head>
-        <title>Shape HR Consultancy</title>
-        <meta name="description" content="Cool cool cool" />
-      </Head>
-
       <section className={styles.main}>
         <div className={styles.overlay}>
           <Image
             className={styles.imageLayer}
-            src={image}
+            src={bgImage}
             alt="Road"
             quality={100}
             fill
@@ -30,15 +23,15 @@ function Hero() {
           />
 
           <div className={styles.shapeOne}>
-            <img src="images/shapes/main-slider-shape-1.png" alt="" />
+            <img src="images/shapes/hero-shape-1.png" alt="" />
           </div>
 
           <div className={styles.shapeTwo}>
-            <img src="images/shapes/main-slider-shape-2.png" alt="" />
+            <img src="images/shapes/hero-shape-2.png" alt="" />
           </div>
 
           <div className={styles.shapeThree}>
-            <img src="images/shapes/main-slider-shape-3.png" alt="" />
+            <img src="images/shapes/hero-shape-3.png" alt="" />
           </div>
 
           <div className={`${styles.container} container`}>
@@ -46,11 +39,9 @@ function Hero() {
               <div className="col-xl-8">
                 <div className={styles.mainContent}>
                   <h2>
-                    {/* Common-sense interim HR/People leadership, consulting, coaching, support & advice for businesses & business people. */}
                     Pragmatic, solution-driven interim HR/People leadership, consulting, coaching, support & advice for businesses and business people.
                   </h2>
                   <p>
-                    {/* Always providing real, effective & pragmatic solutions */}
                     Enabling commercial & human-centric outcomes
                   </p>
                   <Link

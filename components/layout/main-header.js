@@ -7,7 +7,7 @@ import { Fragment } from "react";
 function MainHeader() {
   return (
     <Fragment>
-      <header className={`${styles.mainHeader} clearfix`}>
+      <header className={styles.header}>
         <HeaderRibbon />
         <NavigationBar />
       </header>

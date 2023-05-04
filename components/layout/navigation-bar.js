@@ -1,13 +1,12 @@
 import Link from "next/link";
 import { Link as LinkScroll } from "react-scroll";
 import { useEffect, useState } from "react";
+import MobileNavigationBar from "./mobile-navigation-bar";
 
 import styles from "./navigation-bar.module.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-
-import MobileNavigationBar from "./mobile-navigation-bar";
 
 function NavigationBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,9 +24,11 @@ function NavigationBar() {
 
   return (
     <nav
-      className={`${styles.menu} clearfix} ${scrollY ? styles.strickyHeader : styles.overlay}`}
+      className={`${styles.menu} ${
+        scrollY ? styles.strickyHeader : styles.overlay
+      }`}
     >
-      <div className={`${styles.wrapper} clearfix`}>
+      <div className={styles.wrapper}>
         <div className={styles.wrapperLeft}>
           <div className={styles.wrapperLogo}>
             <Link href="/">
@@ -76,7 +77,7 @@ function NavigationBar() {
               </li>
               <li>
                 <LinkScroll
-                  to="expert-section"
+                  to="reviews-section"
                   spy={true}
                   smooth={true}
                   duration={500}

@@ -12,11 +12,11 @@ function About() {
           data-wow-delay="100ms"
           data-wow-duration="2500ms"
         >
-          <img src="/images/shapes/counter-one-shape-2.png" alt="" />
+          <img src="/images/shapes/about-shape-2.png" alt="" />
         </div>
 
         <div className={styles.shapeThree}>
-          <img src="/images/shapes/counter-one-shape-3.png" alt="" />
+          <img src="/images/shapes/about-shape-3.png" alt="" />
         </div>
 
       <div className="container">
@@ -67,55 +67,6 @@ function About() {
                   consultancy: ShapeHR Ltd.
                 </p>
               </div>
-              {/* <div className={styles.pointsBox}>
-                <ul className={styles.points}>
-                  <li>
-                    <div className={styles.icon}>
-                      <FontAwesomeIcon icon={faCheck} />
-                    </div>
-                    <div className={styles.text}>
-                      <p>
-                        Common-sense
-                      </p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className={styles.icon}>
-                      <FontAwesomeIcon icon={faCheck} />
-                    </div>
-                    <div className={styles.text}>
-                      <p>
-                        Solution driven
-                      </p>
-                    </div>
-                  </li>
-                </ul>
-                <ul className={`${styles.points} ${styles.pointsTwo}`}>
-                  <li>
-                    <div className={styles.icon}>
-                      <FontAwesomeIcon icon={faCheck} />
-                    </div>
-                    <div className={styles.text}>
-                      <p>
-                        Transformative
-                      </p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className={styles.icon}>
-                      <FontAwesomeIcon icon={faCheck} />
-                    </div>
-                    <div className={styles.text}>
-                      <p>
-                        Effective
-                      </p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <p className={styles.rightText}>
-                In addition to Simon's down-to-earth, pragmatic, solution-creating approach, he believes that businesses most effectively change, transform & realise their ambitions & results when their People & their HR/People function are organised, prepared & aligned for the journey ahead.
-              </p> */}
             </div>
           </div>
           <div className="col-xl-5">

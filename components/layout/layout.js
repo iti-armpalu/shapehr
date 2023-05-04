@@ -9,7 +9,9 @@ function Layout(props) {
     <Fragment>
       <div className={styles.wrapper}>
         <MainHeader />
-        <main>{props.children}</main>
+        <main>
+          {props.children}
+        </main>
         <Footer />
       </div>
     </Fragment>

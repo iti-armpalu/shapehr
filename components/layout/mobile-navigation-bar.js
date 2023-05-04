@@ -68,13 +68,13 @@ function MobileNavigationBar(props) {
             </li>
             <li>
               <LinkScroll
-                to="expert-section"
+                to="reviews-section"
                 spy={true}
                 smooth={true}
                 duration={500}
                 onClick={onClose}
               >
-                Our People
+                Real Reviews
               </LinkScroll>
             </li>
             <li>
