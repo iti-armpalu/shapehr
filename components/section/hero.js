@@ -39,7 +39,7 @@ function Hero() {
               <div className="col-xl-8">
                 <div className={styles.mainContent}>
                   <h2>
-                    Pragmatic, solution-driven interim HR/People leadership, consulting, coaching, support & advice for businesses and business people.
+                    Pragmatic, solution-driven interim HR/People leadership, consulting, coaching, support & advice for businesses & business people.
                   </h2>
                   <p>
                     Enabling commercial & human-centric outcomes

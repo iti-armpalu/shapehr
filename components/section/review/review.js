@@ -1,11 +1,11 @@
-import styles from "./expert.module.css";
+import styles from "./review.module.css";
 
-import image from "../../public/images/shapes/reviews-background-shape.png";
-import TestimonialSwiper from "./testimonial/testimonialSwiper";
+import image from "../../../public/images/shapes/reviews-background-shape.png";
+import TestimonialSwiper from "./reviewSwiper";
 
-function Expert() {
+function Review() {
   return (
-    <section id="expert-section" className={styles.section}>
+    <section id="reviews-section" className={styles.section}>
       <div className={styles.sectionWrap}>
         <div
           className={styles.sectionBg}
@@ -35,4 +35,4 @@ function Expert() {
   );
 }
 
-export default Expert;
+export default Review;

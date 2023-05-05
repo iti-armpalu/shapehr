@@ -1,8 +1,7 @@
-import styles from "./testimonialSwiper.module.css";
+import styles from "./reviewSwiper.module.css";
 
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -14,12 +13,16 @@ import { useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 
-function TestimonialSwiper() {
+function ReviewSwiper() {
   const prevRef = useRef();
   const nextRef = useRef();
 
   return (
-    <div className={styles.swiperContainer}>
+    <div
+      className={styles.swiperContainer}
+      data-aos="fade-up"
+      data-aos-delay="100"
+    >
       <div ref={prevRef}></div>
       <Swiper
         // install Swiper modules
@@ -46,7 +49,7 @@ function TestimonialSwiper() {
                 <span>
                   <FontAwesomeIcon icon={faQuoteLeft} className="me-2" />
                 </span>
-                  Simon Heath was my sponsor as part of the Elevate UK Leadership
+                Simon Heath was my sponsor as part of the Elevate UK Leadership
                 Program in 2022, which is a leadership program for Black women
                 across WPP and various agencies such as MediaCom, Group M, and
                 Ogilvy. It was a great experience! At first, I was apprehensive,
@@ -89,31 +92,33 @@ function TestimonialSwiper() {
             </div>
           </div>
         </SwiperSlide>
-        {/* <SwiperSlide className={styles.swiperSlide}>
+        <SwiperSlide className={styles.swiperSlide}>
           <div className="d-flex flex-column">
             <div className={styles.description}>
-              
-              <p className="mb-3">
-              <span>
-                <FontAwesomeIcon icon={faQuoteLeft} className="me-2" />
-              </span>
-                Simon is the best!
-              </p>
-              <p className="mb-3">
-                
-              </p>
               <p className="mb-3">
                 <span>
-                <FontAwesomeIcon icon={faQuoteRight} className="ms-2" />
-              </span>
+                  <FontAwesomeIcon icon={faQuoteLeft} className="me-2" />
+                </span>
+                When I reached the first senior leadership position of my
+                career, I asked my CEO for a coach to help me succeed. Simon was
+                our CPO at the time, but I was lucky enough to be coached
+                directly by him. Four years and two roles later, every session
+                is still as valuable to me. Simon helped me understand how to
+                focus on my strengths to grow, but also helped me align with the
+                overall company needs through his CPO view.
               </p>
-              
+              <p>
+                Very few coaches understand us as people and understand our
+                business context the way Simon does.
+                <span>
+                  <FontAwesomeIcon icon={faQuoteRight} className="ms-2" />
+                </span>
+              </p>
             </div>
             <div className="d-flex flex-row mt-3 align-items-center justify-content-center">
               <div className={styles.photo}>
                 <img src="images/testimonials/Roy.jpeg" />
               </div>
-
               <div className="ms-4">
                 <img
                   className={`${styles.logo} mb-2`}
@@ -126,7 +131,7 @@ function TestimonialSwiper() {
               </div>
             </div>
           </div>
-        </SwiperSlide> */}
+        </SwiperSlide>
         <SwiperSlide className={styles.swiperSlide}>
           <div className="d-flex flex-column">
             <div className={styles.description}>
@@ -136,25 +141,21 @@ function TestimonialSwiper() {
                 </span>
                 Simon is a true HR professional-efficient, transparent,
                 strategic in view and committed to identifying and nurturing the
-                best talent. 
-                </p>
-                <p>
-                Simon is not a procrastinator, always striving to
-                make things happen without unnecessary delay. He puts people
-                centre stage and that drives value for the company he
-                represents. 
-                </p>
-                <p>
-                I really enjoyed working with Simon and would
-                recommend him highly to any company seeking to build a global HR
-                centre of excellence.
+                best talent.
+              </p>
+              <p>
+                Simon is not a procrastinator, always striving to make things
+                happen without unnecessary delay. He puts people centre stage
+                and that drives value for the company he represents.
+              </p>
+              <p>
+                I really enjoyed working with Simon and would recommend him
+                highly to any company seeking to build a global HR centre of
+                excellence.
                 <span>
                   <FontAwesomeIcon icon={faQuoteRight} className="ms-2" />
                 </span>
-                </p>
-              
-              
-         
+              </p>
             </div>
             <div className="d-flex flex-row mt-3 align-items-center justify-content-center">
               <div className={styles.photo}>
@@ -182,16 +183,16 @@ function TestimonialSwiper() {
                 <span>
                   <FontAwesomeIcon icon={faQuoteLeft} className="me-2" />
                 </span>
-                  Simon is a passionate and motivated HR professional, one of the
-                few that has a track record of getting things done! 
-                </p>
-                <p>
-                Always open for conversation and challenge, certainly enjoys the role and
-                helps support a fun but challegning environment. 
-                </p>
-                <p>
-                Works well at a strategic level managing peers and dealing with egos while
-                having a great rapport with other teams.
+                Simon is a passionate and motivated HR professional, one of the
+                few that has a track record of getting things done!
+              </p>
+              <p>
+                Always open for conversation and challenge, certainly enjoys the
+                role and helps support a fun but challegning environment.
+              </p>
+              <p>
+                Works well at a strategic level managing peers and dealing with
+                egos while having a great rapport with other teams.
                 <span>
                   <FontAwesomeIcon icon={faQuoteRight} className="ms-2" />
                 </span>
@@ -201,7 +202,6 @@ function TestimonialSwiper() {
               <div className={styles.photo}>
                 <img src="images/testimonials/Steve.jpeg" />
               </div>
-
               <div className="ms-4">
                 <img
                   className={`${styles.logo} mb-2`}
@@ -236,7 +236,6 @@ function TestimonialSwiper() {
               <div className={styles.photo}>
                 <img src="images/testimonials/David.jpeg" />
               </div>
-
               <div className="ms-4">
                 <img
                   className={`${styles.logo} mb-2`}
@@ -256,4 +255,4 @@ function TestimonialSwiper() {
   );
 }
 
-export default TestimonialSwiper;
+export default ReviewSwiper;

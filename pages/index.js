@@ -4,8 +4,7 @@ import Hero from "../components/section/hero";
 import Services from "../components/section/services";
 import Contact from "../components/section/contact";
 import About from "../components/section/about";
-import Expert from "../components/section/expert";
-import ComingSoon from "../components/section/coming-soon";
+import Review from "../components/section/review/review";
 
 
 function HomePage(props) {
@@ -17,11 +16,10 @@ function HomePage(props) {
         <meta name="description" content="Common-sense interim HR/People leadership, consulting, coaching, support & advice for businesses and business people." />
         <link rel="icon" href="/shapehr-favicon-transparent.ico" />
       </Head>
-      {/* <ComingSoon /> */}
       <Hero />
       <Services />
       <About />
-      <Expert />
+      <Review />
       <Contact />
     </div>
   );
