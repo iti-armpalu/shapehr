@@ -6,8 +6,10 @@ import Contact from "../components/section/contact";
 import About from "../components/section/about";
 import Review from "../components/section/review/review";
 
+import { getAllReviews } from '../data';
 
 function HomePage(props) {
+  const { reviews } = props;
 
   return (
     <div>
@@ -19,10 +21,20 @@ function HomePage(props) {
       <Hero />
       <Services />
       <About />
-      <Review />
+      <Review reviews={reviews} />
       <Contact />
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const allReviews = await getAllReviews();
+
+  return {
+    props: {
+      reviews: allReviews,
+    }
+  };
 }
 
 export default HomePage;

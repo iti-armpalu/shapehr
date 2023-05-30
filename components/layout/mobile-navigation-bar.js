@@ -3,37 +3,36 @@ import { Link as LinkScroll } from "react-scroll";
 
 import styles from "./mobile-navigation-bar.module.css";
 
+
+import useLockBodyScroll from "../ui/use-lock-body-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEnvelope,
   faLocationDot,
   faTimes,
 } from "@fortawesome/free-solid-svg-icons";
-import useLockBodyScroll from "../ui/use-lock-body-scroll";
 
 function MobileNavigationBar(props) {
+
+  // When mobile navigation bar is mounted, disable scroll
   useLockBodyScroll();
 
   const { isOpen, onClose } = props;
 
   return (
-    <div
-      className={`${styles.mobileNavWrapper}  ${isOpen ? styles.expanded : ''}`}
-    >
+    <div className={styles.mobileNavWrapper}>
       <div
-        className={` ${styles.mobileNavOverlay} ${styles.mobileNavToggler}`}
-        onClick={onClose}
-      ></div>
-      {/* /.mobile-nav__overlay */}
+        className={styles.mobileNavOverlay}
+        onClick={onClose}>
+      </div>
       <div className={styles.mobileNavContent}>
         <button
-          className={` ${styles.mobileNavClose} ${styles.mobileNavToggler}`}
+          className={styles.mobileNavClose}
           onClick={onClose}
         >
           <FontAwesomeIcon icon={faTimes} />
         </button>
-
-        <div className={styles.logoBox}>
+        <div className={styles.logo}>
           <Link href="/">
             <img
               src="/images/resources/shapehr-logo-transparent-white.png"
@@ -41,9 +40,8 @@ function MobileNavigationBar(props) {
             />
           </Link>
         </div>
-        {/* /.logo-box */}
         <div className={styles.mobileNavContainer}>
-          <ul className={styles.mobileNavlist}>
+          <ul>
             <li>
               <LinkScroll
                 to="services-section"
@@ -90,27 +88,21 @@ function MobileNavigationBar(props) {
             </li>
           </ul>
         </div>
-        {/* /.mobile-nav__container */}
-
         <ul className={styles.mobileNavContact}>
           <li>
             <span className={styles.mobileNavIcon}>
               <FontAwesomeIcon icon={faLocationDot} />
             </span>
-
             <p>Based in London, United Kingdom</p>
           </li>
           <li>
             <span className={styles.mobileNavIcon}>
               <FontAwesomeIcon icon={faEnvelope} />
             </span>
-
             <p>simon.heath@shape-hr.com</p>
           </li>
         </ul>
-        {/* /.mobile-nav__contact */}
       </div>
-      {/* /.mobile-nav__content */}
     </div>
   );
 }

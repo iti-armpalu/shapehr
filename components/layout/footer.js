@@ -8,11 +8,13 @@ function Footer() {
   const [scrollY, setScrollY] = useState(0);
   const isBrowser = () => typeof window !== "undefined"; //The approach recommended by Next.js
 
+  // On function call, scroll to top
   function scrollToTop() {
     if (!isBrowser()) return;
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
+  // Listen to the scroll event & setScrollY new state if scroll position is higher than 400 pixels
   useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY > 400);
@@ -34,8 +36,8 @@ function Footer() {
         </div>
         {scrollY && (
           <div
-            className={` ${
-              scrollY ? styles.scrollToTopShow : styles.scrollToTopNoShow
+            className={` ${styles.scrollToTopButton} ${
+              scrollY ? styles.fadeIn : styles.fadeOut
             }`}
             onClick={scrollToTop}
           >

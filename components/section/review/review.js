@@ -1,9 +1,11 @@
 import styles from "./review.module.css";
 
 import image from "../../../public/images/shapes/reviews-background-shape.png";
-import TestimonialSwiper from "./reviewSwiper";
+import ReviewSwiper from "./reviewSwiper";
 
-function Review() {
+function Review(props) {
+  const { reviews } = props;
+
   return (
     <section id="reviews-section" className={styles.section}>
       <div className={styles.sectionWrap}>
@@ -13,7 +15,6 @@ function Review() {
             backgroundImage: `url(${image.src})`,
           }}
         />
-
         <div className="container">
           <div className={styles.sectionTitle}>
             <span className={styles.tagline} data-aos="fade-left">
@@ -27,8 +28,9 @@ function Review() {
               from Real People
             </h2>
           </div>
-
-          <TestimonialSwiper />
+          <ReviewSwiper 
+            reviews={reviews} 
+          />
         </div>
       </div>
     </section>

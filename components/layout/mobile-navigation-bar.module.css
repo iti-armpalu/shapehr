@@ -1,35 +1,14 @@
-/*--------------------------------------------------------------
-# Mobile Nav
---------------------------------------------------------------*/
 .mobileNavWrapper {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  /* opacity: 0;
-  transform: translateX(-50%);
-  transform-origin: right center;
-  transition: transform 500ms ease-in, opacity 500ms linear,
-    visibility 500ms ease-in; */
   z-index: 999;
-  visibility: hidden;
   animation: expanded 0.5s ease-in;
   animation-fill-mode: forwards;
 }
 
-.mobileNavWrapper .container {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-/* .mobileNavWrapper.expanded {
-  opacity: 1;
-  transform: translateX(0%);
-  visibility: visible;
-} */
-
-/* // */
 @keyframes expanded {
   from {
     opacity: 0;
@@ -67,15 +46,6 @@
   padding-right: 15px;
 }
 
-.mobileNavContent .logoBox {
-  margin-bottom: 40px;
-  display: flex;
-}
-
-.mobileNavContent .logoBox img {
-  height: 60px;
-}
-
 .mobileNavClose {
   position: absolute;
   top: 20px;
@@ -85,23 +55,32 @@
   cursor: pointer;
 }
 
-.mobileNavContent .mobileNavlist,
-.obileNavContent .mobileNavlist ul {
+
+.logo {
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.mobileNavContainer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobileNavContainer ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.mobileNavContent .mobileNavlist ul {
-  display: none;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.mobileNavContent .mobileNavlist li:not(:last-child) {
+.mobileNavContainer ul li:not(:last-child) {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.mobileNavContent .mobileNavlist li a {
+.mobileNavContainer ul li a {
   display: flex;
   justify-content: space-between;
   line-height: 30px;
@@ -114,15 +93,10 @@
   transition: 500ms;
 }
 
-.mobileNavContent .mobileNavlist li a:hover {
+.mobileNavContainer ul li a:hover {
   transform: translateX(2%);
   cursor: pointer;
   color:  var(--shapehr-white);
-}
-
-.mobileNavContainer {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .mobileNavContact {

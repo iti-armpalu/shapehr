@@ -12,6 +12,7 @@ function NavigationBar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrollY, setScrollY] = useState(0);
 
+  // Listen to the scroll event & setScrollY new state if scroll position is higher than 130 pixels
   useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY > 130);
@@ -24,13 +25,10 @@ function NavigationBar() {
 
   return (
     <nav
-      className={`${styles.menu} ${
-        scrollY ? styles.strickyHeader : styles.overlay
-      }`}
-    >
+      className={`${styles.menu} ${scrollY ? styles.stickyHeader : styles.overlay}`}>
       <div className={styles.wrapper}>
         <div className={styles.wrapperLeft}>
-          <div className={styles.wrapperLogo}>
+          <div className={styles.logo}>
             <Link href="/">
               <img
                 src="/images/resources/shapehr-logo-transparent-white.png"
@@ -38,7 +36,7 @@ function NavigationBar() {
               />
             </Link>
           </div>
-          <div className={styles.wrapperMainMenu}>
+          <div className={styles.mainMenu}>
             <div>
               <button
                 className={styles.mobileNavToggler}
@@ -107,7 +105,7 @@ function NavigationBar() {
               smooth={true}
               duration={500}
             >
-              contact us
+              Contact us
             </LinkScroll>
           </div>
         </div>
