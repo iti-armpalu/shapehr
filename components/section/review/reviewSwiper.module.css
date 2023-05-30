@@ -53,6 +53,10 @@
     padding: 0 0 40px;
   }
 
+  .swiperButtonNext {
+    display: none;
+  }
+
   .description p {
     padding: 0 0;
   }
